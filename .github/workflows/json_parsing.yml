@@ -1,0 +1,45 @@
+name: Json parsing
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Generate csv
+        id: csv
+        run: |
+          pip install -r ./scripts/requirements.txt
+          python3 scripts/generate_csv.py
+
+      - name: Generate yaml
+        id: yaml
+        run: |
+          python3 scripts/generate_yaml.py
+
+      - name: Generate markdown/documentation
+        id: markdown
+        run: |
+          python3 scripts/generate_markdown.py
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: Manual json parsing
+          labels: submission
+          branch: manual_json_parsing
+          branch-suffix: timestamp
+          title: Manual json parsin
+          body: |
+            A manual json parsing

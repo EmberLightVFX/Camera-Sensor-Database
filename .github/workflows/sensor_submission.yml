@@ -1,0 +1,120 @@
+name: Sensor Submission
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract issue details
+        id: info
+        run: |
+          VENDOR=$(echo "${{ github.event.issue.body }}" | awk '/### Vendor/{getline; getline; print; exit}')
+          if [ "$VENDOR" == "Other" ]; then
+            VENDOR=$(echo "${{ github.event.issue.body }}" | awk '/### Other Vendor/{getline; getline; print; exit}')
+          fi
+          echo "vendor<<EOF" >> $GITHUB_ENV
+          echo "$VENDOR" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+          CAMERA=$(echo "${{ github.event.issue.body }}" | awk '/### Vendor/{getline; getline; print; exit}')
+          echo "camera<<EOF" >> $GITHUB_ENV
+          echo "$CAMERA" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Debug extracted data
+        run: |
+          echo "Event Body: ${{ github.event.issue.body }}"
+          echo "Vendor: ${{ env.vendor }}"
+          echo "Camera: ${{ env.camera }}"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Process and update JSON with Python
+        id: python
+        run: |
+          pip install -r ./scripts/requirements.txt
+          python3 ./scripts/update_sensors_and_generate_json.py "${{ github.event.issue.body }}"
+
+      - name: Generate csv
+        id: csv
+        run: |
+          python3 scripts/generate_csv.py
+
+      - name: Generate yaml
+        id: yaml
+        run: |
+          python3 scripts/generate_yaml.py
+
+      - name: Generate markdown/documentation
+        id: markdown
+        run: |
+          python3 scripts/generate_markdown.py
+
+      - name: Create a safe branch name
+        run: |
+          name=$(echo '${{ github.event.issue.title }}' | tr ' ' '_' | tr -cd '[:alnum:]_')
+          echo "branch_name=${name}" >> $GITHUB_ENV
+
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: New sensor data for ${{ env.camera }} - ${{ env.vendor }}
+          labels: submission
+          branch: ${{ env.branch_name }}
+          branch-suffix: timestamp
+          title: ${{ github.event.issue.title }}
+          body: |
+            This pull request adds new sensor data for the camera ${{ env.camera }} by ${{ env.vendor }}
+
+            Closes #${{ github.event.issue.number }}
+
+            ${{ github.event.issue.body }}
+
+      - name: Comment on Issue if all succeeded
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ github.event.issue.number }},
+              body: "Submission sucessfull!"
+            });
+
+      - name: Comment on Issue if Python scripts fail
+        if: ${{ failure() }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const errors = [];
+            if ("${{ steps.python.outcome }}" == "failure") {
+              errors.push('Error happened in update_sensors_and_generate_json.py');
+            }
+            if ("${{ steps.csv.outcome }}" == "failure") {
+              errors.push('Error happened in generate_csv.py');
+            }
+            if ("${{ steps.yaml.outcome }}" == "failure") {
+              errors.push('Error happened in generate_yaml.py');
+            }
+            if ("${{ steps.markdown.outcome }}" == "failure") {
+              errors.push('Error happened in generate_markdown.py');
+            }
+
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ github.event.issue.number }},
+              body: 'There was an error processing the sensor data:\n\n' + errors.join("\n\n") + '\n\n Please check your submitted data.\nIf everything looks good, an Admin will take a look as soon as possible.'
+            });

@@ -1,0 +1,485 @@
+name: Sensor Submission
+description: Fill out this form to create a new sensor and pull request.
+title: "[New Sensor]: "
+labels: [submission]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make the database better!
+        After creating this issue a PR will automatically be created with all files generated.
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Please fill out where you have found the information.
+        This is just to keep track on where it all comes from.
+      placeholder: |
+        https://www.arri.com/resource/blob/277386/3d47cc0f22a5ebe30a48f68cc7bf94a1/2022-05-arri-formatsandresolutionsoverview-4-1-data.pdf
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "# Camera information"
+
+  - type: dropdown
+    id: vendor
+    attributes:
+      label: Vendor
+      # description: Select the camera manufacturer.
+      options:
+        - ARRI
+        - Blackmagic
+        - Canon
+        - DJI
+        - GoPro
+        - Insta360
+        - Kinefinity
+        - Panasonic
+        - RED
+        - Sony
+        - Z Cam
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: other_vendor
+    attributes:
+      label: Other Vendor
+      description: If you selected "Other" above, please specify the vendor here.
+      placeholder: Enter the other vendor name
+
+  - type: input
+    id: camera
+    attributes:
+      label: Camera
+      description: What's the camera's name?
+      placeholder: ex. ALEXA Mini
+    validations:
+      required: true
+
+  - type: textarea
+    id: info
+    attributes:
+      label: Additional Information
+      description: Enter any kind of good-to-have information like lens mount, shutter type, iso range etc.
+
+  - type: markdown
+    attributes:
+      value: |
+        # Sensor dimensions
+        Below you'll find 10 available sensor dimensions fields you can fill out.
+        :red_circle: Type name and ether mm or inches needs to filled out or else the information isn't valid.
+        If the sensor size doesn't change per resolution, name the resolution type `All` and skip entering any resolution
+
+        If you can't find both mm and inch size for the sensor, enter one and the other will automatically be calculated.
+
+        Focal length is optional and only used for cameras with fixed lenses, eg iPhone.
+
+        You can ether resolution and sensor size (mm and inches) any way you want. Only the two first values found will be processed.
+
+  #### Dimensions 1
+  - type: markdown
+    attributes:
+      value: "## Dimensions 1"
+
+  - type: input
+    id: name-r1
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      value: All
+    validations:
+      required: true
+
+  - type: input
+    id: focal_length-r1
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r1
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r1
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r1
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 2
+  - type: markdown
+    attributes:
+      value: "## Dimensions 2"
+
+  - type: input
+    id: name-r2
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r2
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r2
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r2
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r2
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 3
+  - type: markdown
+    attributes:
+      value: "## Dimensions 3"
+
+  - type: input
+    id: name-r3
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r3
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r3
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r3
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r3
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 4
+  - type: markdown
+    attributes:
+      value: "## Dimensions 4"
+
+  - type: input
+    id: name-r4
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r4
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r4
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r4
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r4
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 5
+  - type: markdown
+    attributes:
+      value: "## Dimensions 5"
+
+  - type: input
+    id: name-r5
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r5
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r5
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r5
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r5
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 6
+  - type: markdown
+    attributes:
+      value: "## Dimensions 6"
+
+  - type: input
+    id: name-r6
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r6
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r6
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r6
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r6
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 7
+  - type: markdown
+    attributes:
+      value: "## Dimensions 7"
+
+  - type: input
+    id: name-r7
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r7
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r7
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r7
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r7
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 8
+  - type: markdown
+    attributes:
+      value: "## Dimensions 8"
+
+  - type: input
+    id: name-r8
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r8
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r8
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r8
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r8
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 9
+  - type: markdown
+    attributes:
+      value: "## Dimensions 9"
+
+  - type: input
+    id: name-r9
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r9
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r9
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r9
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r9
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
+
+  #### Dimensions 10
+  - type: markdown
+    attributes:
+      value: "## Dimensions 10"
+
+  - type: input
+    id: name-r10
+    attributes:
+      label: Name
+      description: ":red_circle: What's the sensor dimension's name?"
+      placeholder: "2K Anamorphic 2.39:1"
+
+  - type: input
+    id: focal_length-r10
+    attributes:
+      label: Focal Length
+      description: (Optional) What's the lens's focal length?
+      placeholder: 50mm
+
+  - type: input
+    id: resolution-r10
+    attributes:
+      label: Resolution
+      description: (Optional)
+      placeholder: 4096 x 2160
+
+  - type: input
+    id: mm-r10
+    attributes:
+      label: Sensor size (mm)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 24.6 x 13.8
+
+  - type: input
+    id: inches-r10
+    attributes:
+      label: Sensor size (inches)
+      description: ":red_circle: Enter at least one of mm or inches"
+      placeholder: 0.968 in x 0.543 in
