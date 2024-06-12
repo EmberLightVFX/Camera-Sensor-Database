@@ -2369,8 +2369,8 @@ Blackmagic:
           width: 6048
           height: 2520
         mm:
-          width: 36
-          height: 15
+          width: 36.0
+          height: 15.0
           diagonal: 39.0
         inches:
           width: 1.417
