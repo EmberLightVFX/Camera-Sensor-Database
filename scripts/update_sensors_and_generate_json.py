@@ -48,11 +48,11 @@ try:
 except FileNotFoundError:
     sensors_data = {}
 
-
 vendor = None
 camera = None
 
 blocks = BODY.strip().split("### Name", 1)
+
 ## Camera info
 camera_info = blocks[0].strip().split("### ")
 
@@ -76,14 +76,25 @@ sensors_data[vendor][camera]["info"] = {}
 if data:
     sensors_data[vendor][camera]["info"]["Other"] = data
 
+# Auto-generate sensor dimensions
+auto_sensor_size = "[X]" in camera_info[6]
+
 # Sensor Dimensions
 if "sensor dimensions" not in sensors_data[vendor][camera]:
     sensors_data[vendor][camera]["sensor dimensions"] = {}
 
 ## All resolution types
+full_pixel_width = None
+full_pixel_height = None
+full_sensor_mm_width = None
+full_sensor_mm_height = None
+full_sensor_inches_width = None
+full_sensor_inches_height = None
 for block in blocks[1].split("### Name"):
     mm = None
     inches = None
+    width = 0
+    height = 0
     # Add back the name category that got removed from the split
     block = f"### Name{block}"
 
@@ -113,6 +124,11 @@ for block in blocks[1].split("### Name"):
             "width": res[0],
             "height": res[1],
         }
+        width = res[0]
+        height = res[1]
+        if auto_sensor_size and not full_pixel_width and not full_pixel_height:
+            full_pixel_width = res[0]
+            full_pixel_height = res[1]
     else:
         sensors_data[vendor][camera]["sensor dimensions"][dim_name]["resolution"] = {
             "width": "",
@@ -130,11 +146,42 @@ for block in blocks[1].split("### Name"):
         inches = extract_dual_numbers(data)
 
     if not mm and not inches:
-        raise AttributeError("You need at least one sensor size")
+        # If not the first dimension
+        if auto_sensor_size:
+            if (
+                full_sensor_mm_width
+                and full_sensor_mm_height
+                and full_pixel_width
+                and full_pixel_height
+            ):
+                mm = [
+                    (width / full_pixel_width) * full_sensor_mm_width,
+                    (height / full_pixel_height) * full_sensor_mm_height,
+                ]
+            if (
+                full_sensor_inches_width
+                and full_sensor_inches_height
+                and full_pixel_width
+                and full_pixel_height
+            ):
+                inches = [
+                    (width / full_pixel_width) * full_sensor_inches_width,
+                    (height / full_pixel_height) * full_sensor_inches_height,
+                ]
+        if not mm or not inches:
+            raise AttributeError("You need at least one sensor size")
     elif mm and not inches:
         inches = [mm[0] / 25.4, mm[1] / 25.4]
     elif not mm:
         mm = [inches[0] * 25.4, inches[1] * 25.4]
+
+    if auto_sensor_size:
+        if inches and not full_sensor_inches_width and not full_sensor_inches_height:
+            full_sensor_inches_width = inches[0]
+            full_sensor_inches_height = inches[1]
+        if mm and not (full_sensor_mm_width or full_sensor_mm_height):
+            full_sensor_mm_width = mm[0]
+            full_sensor_mm_height = mm[1]
 
     mm[0] = round(mm[0], 3)
     mm[1] = round(mm[1], 3)

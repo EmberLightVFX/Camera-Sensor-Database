@@ -82,6 +82,15 @@ body:
 
         You can ether resolution and sensor size (mm and inches) any way you want. Only the two first values found will be processed.
 
+  - type: checkboxes
+    attributes:
+      label: Auto-generate sensor sizes
+      description: |
+        If the camera crops perfectly for each resolution change you fill out all information for dimension 1 and
+        only name and resolution for the other ones. The sensor sizes will be automatically calculated.
+      options:
+        - label: Do auto-generate sensor sizes
+
   #### Dimensions 1
   - type: markdown
     attributes:
