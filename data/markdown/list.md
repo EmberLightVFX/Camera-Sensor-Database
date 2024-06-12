@@ -38,6 +38,7 @@
   - [Cinema Camera](/blackmagic/cinemacamera.md)
   - [Pocket Cinema Camera 4K](/blackmagic/pocketcinemacamera4k.md)
   - [Pocket Cinema Camera](/blackmagic/pocketcinemacamera.md)
+  - [Cinema Camera 6K](/blackmagic/cinemacamera6k.md)
 
 - [Canon](//)
   - [EOS C700](/canon/eosc700.md)
