@@ -2548,6 +2548,113 @@ Blackmagic:
           width: 0.45
           height: 0.253
           diagonal: 0.516
+  Pocket Cinema Camera 6K (Pro/G2):
+    info: {}
+    sensor dimensions:
+      6K 16:9:
+        focal length: ''
+        resolution:
+          width: 6144
+          height: 3456
+        mm:
+          width: 23.1
+          height: 12.99
+          diagonal: 26.502
+        inches:
+          width: 0.909
+          height: 0.511
+          diagonal: 1.043
+      6K 2.4:1:
+        focal length: ''
+        resolution:
+          width: 6144
+          height: 2560
+        mm:
+          width: 23.1
+          height: 9.622
+          diagonal: 25.024
+        inches:
+          width: 0.909
+          height: 0.379
+          diagonal: 0.985
+      5.7K 17:9:
+        focal length: ''
+        resolution:
+          width: 5744
+          height: 3024
+        mm:
+          width: 21.596
+          height: 11.366
+          diagonal: 24.404
+        inches:
+          width: 0.85
+          height: 0.447
+          diagonal: 0.96
+      4K DCI:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2160
+        mm:
+          width: 15.4
+          height: 8.119
+          diagonal: 17.409
+        inches:
+          width: 0.606
+          height: 0.32
+          diagonal: 0.685
+      UHD 16:9:
+        focal length: ''
+        resolution:
+          width: 3840
+          height: 2160
+        mm:
+          width: 14.438
+          height: 8.119
+          diagonal: 16.564
+        inches:
+          width: 0.568
+          height: 0.32
+          diagonal: 0.652
+      3.7K 6:5:
+        focal length: ''
+        resolution:
+          width: 3728
+          height: 3104
+        mm:
+          width: 14.016
+          height: 11.667
+          diagonal: 18.236
+        inches:
+          width: 0.552
+          height: 0.459
+          diagonal: 0.718
+      2.8K 17:9:
+        focal length: ''
+        resolution:
+          width: 2880
+          height: 1512
+        mm:
+          width: 10.828
+          height: 5.683
+          diagonal: 12.229
+        inches:
+          width: 0.426
+          height: 0.224
+          diagonal: 0.481
+      HD 16:9:
+        focal length: ''
+        resolution:
+          width: 1920
+          height: 1080
+        mm:
+          width: 7.219
+          height: 4.059
+          diagonal: 8.282
+        inches:
+          width: 0.284
+          height: 0.16
+          diagonal: 0.326
 Canon:
   EOS C700:
     info: {}
