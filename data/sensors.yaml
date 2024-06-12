@@ -2334,6 +2334,113 @@ Blackmagic:
           width: 0.491
           height: 0.276
           diagonal: 0.563
+  Cinema Camera 6K:
+    info: {}
+    sensor dimensions:
+      6K 3:2:
+        focal length: ''
+        resolution:
+          width: 6048
+          height: 4032
+        mm:
+          width: 36
+          height: 24
+          diagonal: 43.267
+        inches:
+          width: 1.417
+          height: 0.945
+          diagonal: 1.703
+      6K 17:9:
+        focal length: ''
+        resolution:
+          width: 6048
+          height: 3200
+        mm:
+          width: 36.0
+          height: 19.048
+          diagonal: 40.729
+        inches:
+          width: 1.417
+          height: 0.75
+          diagonal: 1.603
+      6K 2.4:1:
+        focal length: ''
+        resolution:
+          width: 6048
+          height: 2520
+        mm:
+          width: 36
+          height: 15
+          diagonal: 39.0
+        inches:
+          width: 1.417
+          height: 0.591
+          diagonal: 1.535
+      4K 6:5:
+        focal length: ''
+        resolution:
+          width: 4832
+          height: 4032
+        mm:
+          width: 28.762
+          height: 24.0
+          diagonal: 37.46
+        inches:
+          width: 1.132
+          height: 0.945
+          diagonal: 1.475
+      4K 4:3:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 3072
+        mm:
+          width: 24.381
+          height: 18.286
+          diagonal: 30.476
+        inches:
+          width: 0.96
+          height: 0.72
+          diagonal: 1.2
+      4K 17:9:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2160
+        mm:
+          width: 24.381
+          height: 12.857
+          diagonal: 27.563
+        inches:
+          width: 0.96
+          height: 0.506
+          diagonal: 1.085
+      2K 16:9:
+        focal length: ''
+        resolution:
+          width: 2112
+          height: 1184
+        mm:
+          width: 12.571
+          height: 7.048
+          diagonal: 14.412
+        inches:
+          width: 0.495
+          height: 0.277
+          diagonal: 0.567
+      HD 16:9:
+        focal length: ''
+        resolution:
+          width: 1920
+          height: 1080
+        mm:
+          width: 11.429
+          height: 6.429
+          diagonal: 13.113
+        inches:
+          width: 0.45
+          height: 0.253
+          diagonal: 0.516
 Canon:
   EOS C700:
     info: {}
