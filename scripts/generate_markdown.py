@@ -3,17 +3,20 @@ import os
 import re
 from typing import Any
 from tabulate import tabulate
+import glob
 
 data_folder = os.path.join(".", "data")
 json_file_path = os.path.join(data_folder, "sensors.json")
-docs_folder = os.path.join(data_folder, "markdown")
+markdown_folder = os.path.join(data_folder, "markdown")
+docs_folder = os.path.join(".", "docs")
+tools_folder = os.path.join(docs_folder, "tools")
 sidebar_file_path = os.path.join(docs_folder, "list.md")
 
 with open(json_file_path, "r") as file:
     sensors: dict[str, dict[str, dict[str, Any]]] = json.load(file)
 
 # Create docs directory if it doesn't exist
-os.makedirs(docs_folder, exist_ok=True)
+os.makedirs(markdown_folder, exist_ok=True)
 
 def create_filename(name: str) -> str:
     return re.sub(r'[^a-zA-Z0-9]', '', name.lower().replace(" ", "_"))
@@ -44,7 +47,7 @@ nav_entries = []
 # Iterate through the JSON data to generate markdown files
 for vendor, cameras in sensors.items():
     vendor_path_name = create_filename(vendor)
-    vendor_dir = os.path.join(docs_folder, vendor_path_name)
+    vendor_dir = os.path.join(markdown_folder, vendor_path_name)
     os.makedirs(vendor_dir, exist_ok=True)
     nav_cam:list[dict[str, str]] = []
     for camera, data in cameras.items():
@@ -80,7 +83,7 @@ for vendor, cameras in sensors.items():
             
         markdown_content = generate_markdown(vendor, camera, data.get("info", None), entries)
 
-        with open(os.path.join(docs_folder, filepath), "w") as md_file:
+        with open(os.path.join(markdown_folder, filepath), "w") as md_file:
             md_file.write(markdown_content)
 
     nav_entries.append({"vendor": vendor, "nav_cam": nav_cam})
@@ -92,3 +95,10 @@ with open(sidebar_file_path, "w") as file:
         for camera in entry["nav_cam"]:
             file.write(f'  - [{camera["name"]}]({camera["filepath"]})\n')
         file.write("\n")
+        
+    file.write("- [Tools](//)\n")
+    for file_path in glob.glob(os.path.join(tools_folder, '*.md')):
+        file_name = os.path.basename(file_path)
+        base_name = os.path.splitext(file_name)[0]
+        formatted_name = base_name.replace('_', ' ').title()
+        file.write(f"  - [{formatted_name}](/../../docs/tools/{file_name})\n")

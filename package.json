@@ -1,0 +1,28 @@
+{
+  "name": "camera-sensor-database",
+  "version": "1.0.0",
+  "description": "A collection of camera sensor information.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass docs/plugins/calculator/bootstrap.scss docs/plugins/calculator/bootstrap.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmberLightVFX/Camera-Sensor-Database.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmberLightVFX/Camera-Sensor-Database/issues"
+  },
+  "homepage": "https://github.com/EmberLightVFX/Camera-Sensor-Database#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.77.5"
+  }
+}

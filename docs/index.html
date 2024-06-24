@@ -7,15 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <!-- Theme: Simple (light + dark) -->
-    <link rel="stylesheet" media="(prefers-color-scheme: light)"
-        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/EmberLightVFX/Camera-Sensor-Database@main/docs/plugins/calculator/bootstrap.css">
+    >
     <link rel="stylesheet" media="(prefers-color-scheme: dark)"
         href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
     <style>
       :root {
-        --theme-hue: 30;
-        --theme-lightness : 60%;
         --content-max-width : 80em;
       }
     </style>
@@ -23,34 +21,36 @@
 
 <body>
     <div data-app id="main">Please wait...</div>
+
     <script>
         window.$docsify = {
             el: '#main',
             name: 'Camera Sensor Database',
             repo: 'https://github.com/EmberLightVFX/Camera-Sensor-Database/',
-            auto2top: true,
-            loadSidebar: 'list.md',
+            loadSidebar: '../../docs/list.md',
             autoHeader: true,
             noEmoji: true,
             onlyCover: false,
+            themeColor: '#f5993d',
             maxLevel: 0,
             subMaxLevel: 0,
             sidebarDisplayLevel: 0,
-            scrollToTop: {
-                auto: true,
-                text: 'Top',
-                right: 30,
-                bottom: 30,
-                offset: 500
-            },
+            auto2top: true,
+            calculatorDB: "https://raw.githubusercontent.com/EmberLightVFX/Camera-Sensor-Database/main/data/sensors.json",
+            calculatorTheme: "dark",
             basePath: 'https://raw.githubusercontent.com/EmberLightVFX/Camera-Sensor-Database/master/data/markdown/',
             homepage: 'https://raw.githubusercontent.com/EmberLightVFX/Camera-Sensor-Database/master/README.md',
         }
     </script>
     <!-- Docsify v4 -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/EmberLightVFX/Camera-Sensor-Database@main/docs/plugins/calculator/calculator-plugin.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
