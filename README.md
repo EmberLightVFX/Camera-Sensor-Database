@@ -1,13 +1,46 @@
+<div align="center">
+    <img src="https://raw.githubusercontent.com/EmberLightVFX/Camera-Sensor-Database/main/assets/logo.svg?sanitize=true" alt="logo" title="Logo" height="250" />
+
 # Camera Sensor Database
+</div>
 
-A collection of camera sensor information.
+<p align="center">
+  <i>A collection of camera sensor information. Free to use anywhere.</i>
+</p>
 
-To quickly view the data, go to docs page:
+<p align="center">
+     <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/EmberLightVFX/Camera-Sensor-Database/main?color=48b293">
+     <a href="https://github.com/EmberLightVFX/Camera-Sensor-Database/graphs/contributors">
+          <img src="https://img.shields.io/github/contributors-anon/EmberLightVFX/Camera-Sensor-Database?color=d1a91d" alt="contributors"></a>
+     <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr/EmberLightVFX/Camera-Sensor-Database">
+     <img alt="GitHub License" src="https://img.shields.io/github/license/EmberLightVFX/Camera-Sensor-Database?color=097bbb">
+     <a href="https://ko-fi.com/E1E0ZQTGC">
+          <img alt="Static Badge" src="https://img.shields.io/badge/donate-fa615d?logo=ko-fi&logoColor=white"></a>
+</p>
+
+<p align="center">
+  <a href="#web-docs">Web Docs</a> •
+  <a href="#external-projects">External Projects</a> •
+  <a href="#data-structure">Data Structure</a> •
+  <a href="#formats">Formats</a> •
+  <a href="#missing-sensor-data">Missing Sensor Data?</a>
+</p>
+
+## Web Docs
+
+You can browse all data directly in the browser here:
+
 <https://emberlightvfx.github.io/Camera-Sensor-Database/>
 
-## Structure
+## External Projects
 
-```cmd
+This is a list of external projects using Camera Sensor Database:
+
+* [Camera Sensor Database for BlackMagic Fusion](https://www.steakunderwater.com/wesuckless/viewtopic.php?p=49031#p49031)
+
+## Data Structure
+
+```tree
 Vendor
 └─── Camera
      ├─── Info

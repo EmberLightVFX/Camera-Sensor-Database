@@ -96,7 +96,7 @@ with open(sidebar_file_path, "w") as file:
             file.write(f'  - [{camera["name"]}]({camera["filepath"]})\n')
         file.write("\n")
         
-    file.write("- [Tools](//)\n")
+    file.write("---\n\n- [Tools](//)\n")
     for file_path in glob.glob(os.path.join(tools_folder, '*.md')):
         file_name = os.path.basename(file_path)
         base_name = os.path.splitext(file_name)[0]
