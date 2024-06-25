@@ -14,7 +14,7 @@
           <img src="https://img.shields.io/github/contributors-anon/EmberLightVFX/Camera-Sensor-Database?color=d1a91d" alt="contributors"></a>
      <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr/EmberLightVFX/Camera-Sensor-Database">
      <img alt="GitHub License" src="https://img.shields.io/github/license/EmberLightVFX/Camera-Sensor-Database?color=097bbb">
-     <a href="https://ko-fi.com/E1E0ZQTGC">
+     <a href="https://ko-fi.com/emberlightvfx">
           <img alt="Static Badge" src="https://img.shields.io/badge/donate-fa615d?logo=ko-fi&logoColor=white"></a>
 </p>
 
