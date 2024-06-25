@@ -36,7 +36,7 @@ You can browse all data directly in the browser here:
 
 This is a list of external projects using Camera Sensor Database:
 
-* [Camera Sensor Database for BlackMagic Fusion](https://www.steakunderwater.com/wesuckless/viewtopic.php?p=49031#p49031)
+* [Camera Sensor Database for BlackMagic Fusion](https://www.steakunderwater.com/wesuckless/viewtopic.php?p=48931#p48931)
 
 ## Data Structure
 
