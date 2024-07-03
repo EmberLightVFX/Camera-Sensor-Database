@@ -65,10 +65,10 @@ Vendor
 The data comes in multiple formats.
 You find them all in the data folder.
 
-- json
-- csv
-- yaml
-- markdown
+* json
+* csv
+* yaml
+* markdown
 
 ## Missing Sensor Data?
 
