@@ -91,12 +91,12 @@ for vendor, cameras in sensors.items():
 # Write sidebar file
 with open(sidebar_file_path, "w") as file:
     for entry in nav_entries:
-        file.write(f'- [{entry["vendor"]}](//)\n')
+        file.write(f"- [{entry['vendor']}](/ ':disabled')\n")
         for camera in entry["nav_cam"]:
             file.write(f'  - [{camera["name"]}]({camera["filepath"]})\n')
         file.write("\n")
         
-    file.write("---\n\n- [Tools](//)\n")
+    file.write("---\n\n- [Tools](/ ':disabled')\n")
     for file_path in glob.glob(os.path.join(tools_folder, '*.md')):
         file_name = os.path.basename(file_path)
         base_name = os.path.splitext(file_name)[0]
