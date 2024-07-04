@@ -1,4 +1,4 @@
-- [ARRI](//)
+- [ARRI](/ ':disabled')
   - [ALEXA 65](/arri/alexa65.md)
   - [ALEXA LF](/arri/alexalf.md)
   - [ALEXA Mini](/arri/alexamini.md)
@@ -22,7 +22,7 @@
   - [Arriflex D-21](/arri/arriflexd21.md)
   - [Arriflex D-20](/arri/arriflexd20.md)
 
-- [Blackmagic](//)
+- [Blackmagic](/ ':disabled')
   - [URSA 4.6K](/blackmagic/ursa46k.md)
   - [URSA 4K](/blackmagic/ursa4k.md)
   - [URSA Mini Pro 4.6K G2](/blackmagic/ursaminipro46kg2.md)
@@ -42,7 +42,7 @@
   - [PYXIS 6K](/blackmagic/pyxis6k.md)
   - [Pocket Cinema Camera 6K (Pro/G2)](/blackmagic/pocketcinemacamera6kprog2.md)
 
-- [Canon](//)
+- [Canon](/ ':disabled')
   - [EOS C700](/canon/eosc700.md)
   - [EOS C700 GS PL](/canon/eosc700gspl.md)
   - [EOS C500](/canon/eosc500.md)
@@ -71,7 +71,7 @@
   - [EOS 600D / Rebel T3i](/canon/eos600drebelt3i.md)
   - [EOS 550D / Rebel T2i](/canon/eos550drebelt2i.md)
 
-- [Panasonic](//)
+- [Panasonic](/ ':disabled')
   - [VariCam Pure](/panasonic/varicampure.md)
   - [VariCam 35](/panasonic/varicam35.md)
   - [VariCam LT](/panasonic/varicamlt.md)
@@ -87,13 +87,13 @@
   - [Lumix GH2](/panasonic/lumixgh2.md)
   - [Lumix GH1](/panasonic/lumixgh1.md)
 
-- [Panavision](//)
+- [Panavision](/ ':disabled')
   - [Millennium DXL2](/panavision/millenniumdxl2.md)
   - [Millennium DXL](/panavision/millenniumdxl.md)
   - [Genesis](/panavision/genesis.md)
   - [HD-900F](/panavision/hd900f.md)
 
-- [RED](//)
+- [RED](/ ':disabled')
   - [WEAPON MONSTRO 8K W](/red/weaponmonstro8kw.md)
   - [WEAPON HELIUM 8K S35](/red/weaponhelium8ks35.md)
   - [WEAPON DRAGON 6K S35](/red/weapondragon6ks35.md)
@@ -107,7 +107,7 @@
   - [One MX](/red/onemx.md)
   - [One](/red/one.md)
 
-- [Sony](//)
+- [Sony](/ ':disabled')
   - [VENICE](/sony/venice.md)
   - [F65](/sony/f65.md)
   - [F55](/sony/f55.md)
@@ -146,7 +146,7 @@
   - [a77](/sony/a77.md)
   - [a6500](/sony/a6500.md)
 
-- [DJI](//)
+- [DJI](/ ':disabled')
   - [Osmo Pro and Raw](/dji/osmoproandraw.md)
   - [Osmo+](/dji/osmo.md)
   - [Osmo](/dji/osmo.md)
@@ -162,7 +162,7 @@
   - [Phantom 4 Advanced](/dji/phantom4advanced.md)
   - [Phantom 4](/dji/phantom4.md)
 
-- [GoPro](//)
+- [GoPro](/ ':disabled')
   - [HERO7 Black](/gopro/hero7black.md)
   - [HERO6 Black](/gopro/hero6black.md)
   - [HERO5 Black](/gopro/hero5black.md)
@@ -179,7 +179,7 @@
   - [HD HERO2](/gopro/hdhero2.md)
   - [HD HERO](/gopro/hdhero.md)
 
-- [Nikon](//)
+- [Nikon](/ ':disabled')
   - [D4](/nikon/d4.md)
   - [D7100](/nikon/d7100.md)
   - [D7000](/nikon/d7000.md)
@@ -188,5 +188,5 @@
 
 ---
 
-- [Tools](//)
-  - [Undistorted sensor size](/../../docs/tools/undistorted_sensor_size.md)
+- [Tools](/ ':disabled')
+  - [Undistorted Sensor Size](/../../docs/tools/undistorted_sensor_size.md)
