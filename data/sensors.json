@@ -11985,6 +11985,28 @@
           }
         }
       }
+    },
+    "A7 IV": {
+      "info": {},
+      "sensor dimensions": {
+        "All": {
+          "focal length": "",
+          "resolution": {
+            "width": 7008,
+            "height": 4672
+          },
+          "mm": {
+            "width": 35.6,
+            "height": 23.8,
+            "diagonal": 42.823
+          },
+          "inches": {
+            "width": 35.6,
+            "height": 23.8,
+            "diagonal": 42.823
+          }
+        }
+      }
     }
   },
   "DJI": {
