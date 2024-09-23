@@ -9068,6 +9068,22 @@ Sony:
           width: 35.6
           height: 23.8
           diagonal: 42.823
+  ZV-E1:
+    info: {}
+    sensor dimensions:
+      Exmor R CMOS sensor:
+        focal length: ''
+        resolution:
+          width: 4240
+          height: 2832
+        mm:
+          width: 35.6
+          height: 23.8
+          diagonal: 42.823
+        inches:
+          width: 1.402
+          height: 0.937
+          diagonal: 1.686
 DJI:
   Osmo Pro and Raw:
     info: {}
