@@ -146,6 +146,7 @@
   - [a77](/sony/a77.md)
   - [a6500](/sony/a6500.md)
   - [A7 IV](/sony/a7iv.md)
+  - [ZV-E1](/sony/zve1.md)
 
 - [DJI](/ ':disabled')
   - [Osmo Pro and Raw](/dji/osmoproandraw.md)
