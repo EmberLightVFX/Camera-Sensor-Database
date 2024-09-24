@@ -21,6 +21,7 @@
   - [AMIRA](/arri/amira.md)
   - [Arriflex D-21](/arri/arriflexd21.md)
   - [Arriflex D-20](/arri/arriflexd20.md)
+  - [ALEXA 35](/arri/alexa35.md)
 
 - [Blackmagic](/ ':disabled')
   - [URSA 4.6K](/blackmagic/ursa46k.md)
