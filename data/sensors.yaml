@@ -1885,6 +1885,126 @@ ARRI:
           width: 0.9354
           height: 0.5262
           diagonal: 1.073
+  ALEXA 35:
+    info: {}
+    sensor dimensions:
+      4.6K 3:2 Open Gate:
+        focal length: ''
+        resolution:
+          width: 4608
+          height: 3164
+        mm:
+          width: 28.0
+          height: 19.2
+          diagonal: 33.951
+        inches:
+          width: 1.102
+          height: 0.756
+          diagonal: 1.336
+      4.6K 16:9:
+        focal length: ''
+        resolution:
+          width: 4608
+          height: 2592
+        mm:
+          width: 28.0
+          height: 15.7
+          diagonal: 32.101
+        inches:
+          width: 1.102
+          height: 0.618
+          diagonal: 1.263
+      4K 16:9:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2304
+        mm:
+          width: 24.9
+          height: 14.0
+          diagonal: 28.566
+        inches:
+          width: 0.98
+          height: 0.551
+          diagonal: 1.124
+      4K 2:1:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2048
+        mm:
+          width: 24.9
+          height: 12.4
+          diagonal: 27.817
+        inches:
+          width: 0.98
+          height: 0.488
+          diagonal: 1.095
+      3.8K 16:9:
+        focal length: ''
+        resolution:
+          width: 3840
+          height: 2160
+        mm:
+          width: 23.3
+          height: 13.1
+          diagonal: 26.73
+        inches:
+          width: 0.917
+          height: 0.516
+          diagonal: 1.052
+      3.3K 6:5:
+        focal length: ''
+        resolution:
+          width: 3328
+          height: 2790
+        mm:
+          width: 20.22
+          height: 16.95
+          diagonal: 26.385
+        inches:
+          width: 0.796
+          height: 0.667
+          diagonal: 1.039
+      3K 1:1:
+        focal length: ''
+        resolution:
+          width: 3072
+          height: 3072
+        mm:
+          width: 18.7
+          height: 18.7
+          diagonal: 26.446
+        inches:
+          width: 0.736
+          height: 0.736
+          diagonal: 1.041
+      2.7K 8:9:
+        focal length: ''
+        resolution:
+          width: 2743
+          height: 3086
+        mm:
+          width: 16.7
+          height: 18.7
+          diagonal: 25.071
+        inches:
+          width: 0.657
+          height: 0.736
+          diagonal: 0.987
+      2K 16:9 S16:
+        focal length: ''
+        resolution:
+          width: 2048
+          height: 1152
+        mm:
+          width: 12.4
+          height: 7.0
+          diagonal: 14.239
+        inches:
+          width: 0.488
+          height: 0.276
+          diagonal: 0.561
 Blackmagic:
   URSA 4.6K:
     info: {}
