@@ -189,6 +189,9 @@
   - [D5100](/nikon/d5100.md)
   - [D90](/nikon/d90.md)
 
+- [Vision Research](/ ':disabled')
+  - [Phantom FLex 4k](/visionresearch/phantomflex4k.md)
+
 ---
 
 - [Tools](/ ':disabled')

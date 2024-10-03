@@ -13350,5 +13350,116 @@
         }
       }
     }
+  },
+  "Vision Research": {
+    "Phantom FLex 4k": {
+      "info": {
+        "Other": "High speed camera"
+      },
+      "sensor dimensions": {
+        "4k 16/9 (full sensor)": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 2304
+          },
+          "mm": {
+            "width": 27.6,
+            "height": 15.5,
+            "diagonal": 31.655
+          },
+          "inches": {
+            "width": 1.087,
+            "height": 0.61,
+            "diagonal": 1.246
+          }
+        },
+        "4k 1.85": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 2216
+          },
+          "mm": {
+            "width": 27.6,
+            "height": 14.908,
+            "diagonal": 31.369
+          },
+          "inches": {
+            "width": 1.087,
+            "height": 0.587,
+            "diagonal": 1.235
+          }
+        },
+        "4k DCI (1.89)": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 2160
+          },
+          "mm": {
+            "width": 27.6,
+            "height": 14.531,
+            "diagonal": 31.192
+          },
+          "inches": {
+            "width": 1.087,
+            "height": 0.572,
+            "diagonal": 1.228
+          }
+        },
+        "UHD 16/9": {
+          "focal length": "",
+          "resolution": {
+            "width": 3840,
+            "height": 2160
+          },
+          "mm": {
+            "width": 25.875,
+            "height": 14.531,
+            "diagonal": 29.676
+          },
+          "inches": {
+            "width": 1.019,
+            "height": 0.572,
+            "diagonal": 1.169
+          }
+        },
+        "4k 2.39": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 1712
+          },
+          "mm": {
+            "width": 27.6,
+            "height": 11.517,
+            "diagonal": 29.907
+          },
+          "inches": {
+            "width": 1.087,
+            "height": 0.453,
+            "diagonal": 1.178
+          }
+        },
+        "4k anamorphic x2": {
+          "focal length": "",
+          "resolution": {
+            "width": 2752,
+            "height": 2304
+          },
+          "mm": {
+            "width": 18.544,
+            "height": 15.5,
+            "diagonal": 24.169
+          },
+          "inches": {
+            "width": 0.73,
+            "height": 0.61,
+            "diagonal": 0.951
+          }
+        }
+      }
+    }
   }
 }
