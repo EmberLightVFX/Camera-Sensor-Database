@@ -1,4 +1,4 @@
-# GoPro - HERO3 Silver Edition
+# GoPro - HERO3+ Silver Edition
 
 ## Resolution Dimensions
 
