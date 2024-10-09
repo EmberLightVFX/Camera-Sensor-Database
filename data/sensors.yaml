@@ -10178,12 +10178,12 @@ Vision Research:
           height: 1536
         mm:
           width: 13.8
-          height: 7.29
-          diagonal: 15.607
+          height: 9.72
+          diagonal: 16.88
         inches:
           width: 0.543
-          height: 0.287
-          diagonal: 0.614
+          height: 0.383
+          diagonal: 0.664
       2K (windowed) native 16:9:
         focal length: ''
         resolution:
@@ -10191,12 +10191,12 @@ Vision Research:
           height: 1152
         mm:
           width: 13.8
-          height: 5.468
-          diagonal: 14.844
+          height: 7.29
+          diagonal: 15.607
         inches:
           width: 0.543
-          height: 0.215
-          diagonal: 0.584
+          height: 0.287
+          diagonal: 0.614
       2K (windowed) overscan 16:9:
         focal length: ''
         resolution:
@@ -10204,12 +10204,12 @@ Vision Research:
           height: 1080
         mm:
           width: 12.938
-          height: 5.126
-          diagonal: 13.916
+          height: 6.834
+          diagonal: 14.632
         inches:
           width: 0.509
-          height: 0.202
-          diagonal: 0.548
+          height: 0.269
+          diagonal: 0.576
       2K (windowed) native DCI:
         focal length: ''
         resolution:
@@ -10217,12 +10217,12 @@ Vision Research:
           height: 1080
         mm:
           width: 13.8
-          height: 5.126
-          diagonal: 14.721
+          height: 6.834
+          diagonal: 15.399
         inches:
           width: 0.543
-          height: 0.202
-          diagonal: 0.579
+          height: 0.269
+          diagonal: 0.606
       2K (windowed) crop 16:9:
         focal length: ''
         resolution:
@@ -10230,12 +10230,12 @@ Vision Research:
           height: 720
         mm:
           width: 8.625
-          height: 3.417
-          diagonal: 9.277
+          height: 4.556
+          diagonal: 9.754
         inches:
           width: 0.34
-          height: 0.135
-          diagonal: 0.366
+          height: 0.179
+          diagonal: 0.384
       2K (windowed) scaled 16:9:
         focal length: ''
         resolution:
@@ -10243,9 +10243,9 @@ Vision Research:
           height: 720
         mm:
           width: 8.625
-          height: 3.417
-          diagonal: 9.277
+          height: 4.556
+          diagonal: 9.754
         inches:
           width: 0.34
-          height: 0.135
-          diagonal: 0.366
+          height: 0.179
+          diagonal: 0.384
