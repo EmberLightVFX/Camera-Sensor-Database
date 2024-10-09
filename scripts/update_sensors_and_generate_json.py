@@ -77,7 +77,7 @@ if data:
     sensors_data[vendor][camera]["info"]["Other"] = data
 
 # Auto-generate sensor dimensions
-auto_sensor_size = "[X]" in camera_info[6]
+auto_sensor_size = "[x]" in camera_info[6].lower()
 
 # Sensor Dimensions
 if "sensor dimensions" not in sensors_data[vendor][camera]:
