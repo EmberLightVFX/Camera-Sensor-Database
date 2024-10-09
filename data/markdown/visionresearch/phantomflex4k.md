@@ -12,9 +12,9 @@
 | 4K (35mm) native 1.85:1     | 4096 x 2216  | 27.6 x 14.908 (31.369 diagonal)   | 1.087 x 0.587 (1.235 diagonal) |
 | 4K (35mm) native 2.39:1     | 4096 x 1712  | 27.6 x 11.517 (29.907 diagonal)   | 1.087 x 0.453 (1.178 diagonal) |
 | 4K (35mm) cropped 16:9      | 3840 x 2160  | 25.875 x 14.531 (29.676 diagonal) | 1.019 x 0.572 (1.169 diagonal) |
-| 2K (windowed) native 4:3    | 2048 x 1536  | 13.8 x 7.29 (15.607 diagonal)     | 0.543 x 0.287 (0.614 diagonal) |
-| 2K (windowed) native 16:9   | 2048 x 1152  | 13.8 x 5.468 (14.844 diagonal)    | 0.543 x 0.215 (0.584 diagonal) |
-| 2K (windowed) overscan 16:9 | 1920 x 1080  | 12.938 x 5.126 (13.916 diagonal)  | 0.509 x 0.202 (0.548 diagonal) |
-| 2K (windowed) native DCI    | 2048 x 1080  | 13.8 x 5.126 (14.721 diagonal)    | 0.543 x 0.202 (0.579 diagonal) |
-| 2K (windowed) crop 16:9     | 1280 x 720   | 8.625 x 3.417 (9.277 diagonal)    | 0.34 x 0.135 (0.366 diagonal)  |
-| 2K (windowed) scaled 16:9   | 1280 x 720   | 8.625 x 3.417 (9.277 diagonal)    | 0.34 x 0.135 (0.366 diagonal)  |
+| 2K (windowed) native 4:3    | 2048 x 1536  | 13.8 x 9.72 (16.88 diagonal)      | 0.543 x 0.383 (0.664 diagonal) |
+| 2K (windowed) native 16:9   | 2048 x 1152  | 13.8 x 7.29 (15.607 diagonal)     | 0.543 x 0.287 (0.614 diagonal) |
+| 2K (windowed) overscan 16:9 | 1920 x 1080  | 12.938 x 6.834 (14.632 diagonal)  | 0.509 x 0.269 (0.576 diagonal) |
+| 2K (windowed) native DCI    | 2048 x 1080  | 13.8 x 6.834 (15.399 diagonal)    | 0.543 x 0.269 (0.606 diagonal) |
+| 2K (windowed) crop 16:9     | 1280 x 720   | 8.625 x 4.556 (9.754 diagonal)    | 0.34 x 0.179 (0.384 diagonal)  |
+| 2K (windowed) scaled 16:9   | 1280 x 720   | 8.625 x 4.556 (9.754 diagonal)    | 0.34 x 0.179 (0.384 diagonal)  |
