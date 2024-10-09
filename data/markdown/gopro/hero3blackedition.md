@@ -1,4 +1,4 @@
-# GoPro - HERO3 Black Edition
+# GoPro - HERO3+ Black Edition
 
 ## Resolution Dimensions
 

@@ -1,4 +1,4 @@
-# DJI - Osmo
+# DJI - Osmo+
 
 ## Resolution Dimensions
 
