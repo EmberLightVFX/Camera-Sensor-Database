@@ -199,6 +199,10 @@ for block in blocks[1].split("### Name"):
         "diagonal": round(math.sqrt(inches[0] ** 2 + inches[1] ** 2), 3),
     }
 
+# Sort the data:
+sensors_data = {
+    key: dict(sorted(value.items())) for key, value in sorted(sensors_data.items())
+}
 
 # Write the updated dictionary back to sensors.json
 if DEBUG:
