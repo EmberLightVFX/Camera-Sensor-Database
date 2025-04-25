@@ -5039,6 +5039,147 @@
           }
         }
       }
+    },
+    "Zenmuse X9-6K": {
+      "info": {},
+      "sensor dimensions": {
+        "16:9 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 5632,
+            "height": 3168
+          },
+          "mm": {
+            "width": 33.5,
+            "height": 18.8,
+            "diagonal": 38.415
+          },
+          "inches": {
+            "width": 1.319,
+            "height": 0.74,
+            "diagonal": 1.512
+          }
+        },
+        "17:9 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 6008,
+            "height": 3168
+          },
+          "mm": {
+            "width": 35.7,
+            "height": 18.8,
+            "diagonal": 40.348
+          },
+          "inches": {
+            "width": 1.406,
+            "height": 0.74,
+            "diagonal": 1.589
+          }
+        },
+        "16:9 Full Frame 50FPS": {
+          "focal length": "",
+          "resolution": {
+            "width": 5568,
+            "height": 3136
+          },
+          "mm": {
+            "width": 33.1,
+            "height": 18.6,
+            "diagonal": 37.968
+          },
+          "inches": {
+            "width": 1.303,
+            "height": 0.732,
+            "diagonal": 1.495
+          }
+        },
+        "17:9 Full Frame 50FPS": {
+          "focal length": "",
+          "resolution": {
+            "width": 5952,
+            "height": 3136
+          },
+          "mm": {
+            "width": 35.4,
+            "height": 18.6,
+            "diagonal": 39.989
+          },
+          "inches": {
+            "width": 1.394,
+            "height": 0.732,
+            "diagonal": 1.575
+          }
+        },
+        "2.39:1 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 6008,
+            "height": 2512
+          },
+          "mm": {
+            "width": 35.7,
+            "height": 14.9,
+            "diagonal": 38.685
+          },
+          "inches": {
+            "width": 1.406,
+            "height": 0.587,
+            "diagonal": 1.524
+          }
+        },
+        "16:9 Super 35": {
+          "focal length": "",
+          "resolution": {
+            "width": 3840,
+            "height": 2160
+          },
+          "mm": {
+            "width": 22.8,
+            "height": 12.8,
+            "diagonal": 26.147
+          },
+          "inches": {
+            "width": 0.898,
+            "height": 0.504,
+            "diagonal": 1.03
+          }
+        },
+        "17:9 Super 35": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 2160
+          },
+          "mm": {
+            "width": 24.3,
+            "height": 12.8,
+            "diagonal": 27.465
+          },
+          "inches": {
+            "width": 0.957,
+            "height": 0.504,
+            "diagonal": 1.082
+          }
+        },
+        "2.39:1 Super 35": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 1712
+          },
+          "mm": {
+            "width": 24.3,
+            "height": 10.2,
+            "diagonal": 26.354
+          },
+          "inches": {
+            "width": 0.957,
+            "height": 0.402,
+            "diagonal": 1.038
+          }
+        }
+      }
     }
   },
   "GoPro": {
