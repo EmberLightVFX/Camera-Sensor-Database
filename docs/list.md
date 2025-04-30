@@ -87,6 +87,7 @@
   - [Zenmuse X5R](/dji/zenmusex5r.md)
   - [Zenmuse X5S](/dji/zenmusex5s.md)
   - [Zenmuse X7](/dji/zenmusex7.md)
+  - [Zenmuse X9-8K](/dji/zenmusex98k.md)
 
 - [GoPro](/ ':disabled')
   - [HD HERO](/gopro/hdhero.md)

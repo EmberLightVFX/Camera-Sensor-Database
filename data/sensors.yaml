@@ -3784,6 +3784,74 @@ DJI:
           width: 0.886
           height: 0.5
           diagonal: 1.017
+  Zenmuse X9-8K:
+    info: {}
+    sensor dimensions:
+      16:9 Full Frame:
+        focal length: ''
+        resolution:
+          width: 7680
+          height: 4320
+        mm:
+          width: 33.8
+          height: 19.0
+          diagonal: 38.774
+        inches:
+          width: 1.331
+          height: 0.748
+          diagonal: 1.527
+      17:9 Full Frame:
+        focal length: ''
+        resolution:
+          width: 8192
+          height: 4320
+        mm:
+          width: 36
+          height: 19
+          diagonal: 40.706
+        inches:
+          width: 1.417
+          height: 0.748
+          diagonal: 1.602
+      2.39:1 Full Frame:
+        focal length: ''
+        resolution:
+          width: 8192
+          height: 3424
+        mm:
+          width: 36.0
+          height: 15.1
+          diagonal: 39.039
+        inches:
+          width: 1.417
+          height: 0.594
+          diagonal: 1.536
+      16:9 Super 35:
+        focal length: ''
+        resolution:
+          width: 5248
+          height: 2952
+        mm:
+          width: 23.1
+          height: 13.0
+          diagonal: 26.507
+        inches:
+          width: 0.909
+          height: 0.512
+          diagonal: 1.043
+      17:9 Super 35:
+        focal length: ''
+        resolution:
+          width: 5568
+          height: 2952
+        mm:
+          width: 24.5
+          height: 13.0
+          diagonal: 27.735
+        inches:
+          width: 0.965
+          height: 0.512
+          diagonal: 1.092
 GoPro:
   HD HERO:
     info: {}
