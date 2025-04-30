@@ -1,0 +1,161 @@
+name: Reprocess Sensor PR
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to reprocess"
+        required: true
+        type: number
+
+jobs:
+  reprocess_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository (main branch)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Get PR data
+        id: pr_data
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = ${{ inputs.pr_number }};
+            const pr = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+
+            // Get PR body and branch name
+            const prBody = pr.data.body;
+            const branchName = pr.data.head.ref;
+
+            // Output the PR body and branch name
+            core.setOutput('pr_body', prBody);
+            core.setOutput('branch_name', branchName);
+
+            return {prBody, branchName};
+
+      - name: Extract details from PR body
+        id: info
+        run: |
+          VENDOR=$(echo "${{ steps.pr_data.outputs.pr_body }}" | awk '/### Vendor/{getline; getline; print; exit}')
+          if [ "$VENDOR" == "Other" ]; then
+            VENDOR=$(cat pr_body.txt | awk '/### Other Vendor/{getline; getline; print; exit}')
+          fi
+          echo "vendor<<EOF" >> $GITHUB_ENV
+          echo "$VENDOR" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+          CAMERA=$(echo "${{ steps.pr_data.outputs.pr_body }}" | awk '/### Camera/{getline; getline; print; exit}')
+          echo "camera<<EOF" >> $GITHUB_ENV
+          echo "$CAMERA" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+          # Debug extracted data
+          echo "Vendor: $VENDOR"
+          echo "Camera: $CAMERA"
+
+      - name: Debug extracted data
+        run: |
+          echo "Event Body: ${{ github.event.issue.body }}"
+          echo "Vendor: ${{ env.vendor }}"
+          echo "Camera: ${{ env.camera }}"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Process and update JSON with Python
+        id: python
+        run: |
+          pip install -r ./scripts/requirements.txt
+          python3 ./scripts/update_sensors_and_generate_json.py "${{ steps.pr_data.outputs.pr_body }}"
+
+      - name: Generate csv
+        id: csv
+        run: |
+          python3 scripts/generate_csv.py
+
+      - name: Generate yaml
+        id: yaml
+        run: |
+          python3 scripts/generate_yaml.py
+
+      - name: Generate markdown/documentation
+        id: markdown
+        run: |
+          python3 scripts/generate_markdown.py
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Push changes to PR branch
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { execSync } = require('child_process');
+
+            // Get branch name from PR
+            const branchName = '${{ steps.pr_data.outputs.branch_name }}';
+
+            // Create temporary branch
+            execSync('git checkout -b temp_processing_branch');
+
+            // Add and commit changes
+            execSync('git add -A');
+            execSync('git commit -m "Reprocessed sensor data for ${{ env.camera }} - ${{ env.vendor }}"', { stdio: 'pipe' });
+
+            // Force push to PR branch
+            try {
+              execSync(`git push origin temp_processing_branch:${branchName} --force`);
+              console.log("Successfully pushed changes to PR branch");
+            } catch (error) {
+              console.error("Failed to push changes:", error);
+              process.exit(1);
+            }
+
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ inputs.pr_number }},
+              body: "Reprocessed sensor data successfully using the latest scripts from main branch. All files have been updated in this PR."
+            });
+
+      - name: Comment on PR if script fails
+        if: ${{ failure() }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const errors = [];
+            if ("${{ steps.python.outcome }}" == "failure") {
+              errors.push('Error happened in update_sensors_and_generate_json.py');
+            }
+            if ("${{ steps.csv.outcome }}" == "failure") {
+              errors.push('Error happened in generate_csv.py');
+            }
+            if ("${{ steps.yaml.outcome }}" == "failure") {
+              errors.push('Error happened in generate_yaml.py');
+            }
+            if ("${{ steps.markdown.outcome }}" == "failure") {
+              errors.push('Error happened in generate_markdown.py');
+            }
+
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ inputs.pr_number }},
+              body: 'There was an error reprocessing the sensor data:\n\n' + errors.join("\n\n")
+            });
