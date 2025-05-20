@@ -3959,6 +3959,40 @@ DJI:
           width: 0.965
           height: 0.512
           diagonal: 1.092
+Fujifilm:
+  X-H2s:
+    info:
+      Other: 4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification).
+        Only HDMI raw output values are provided as sensor downsampling / binning
+        / magnification is untested for built-in formats and may vary between frame-rates,
+        besides the alike 6.2k internal mode, identical to the HDMI 6.2K signal.
+    sensor dimensions:
+      6.2K 3:2:
+        focal length: ''
+        resolution:
+          width: 6240
+          height: 4160
+        mm:
+          width: 23.5
+          height: 15.6
+          diagonal: 28.207
+        inches:
+          width: 0.925
+          height: 0.614
+          diagonal: 1.11
+      4.8K 16:9:
+        focal length: ''
+        resolution:
+          width: 4848
+          height: 2728
+        mm:
+          width: 18.258
+          height: 10.23
+          diagonal: 20.929
+        inches:
+          width: 0.719
+          height: 0.403
+          diagonal: 0.824
 GoPro:
   HD HERO:
     info: {}
