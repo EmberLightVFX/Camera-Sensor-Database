@@ -1,45 +1,120 @@
-name: Json parsing
+name: JSON Parsing
 
 on:
   workflow_dispatch:
+    inputs:
+      commit_message:
+        description: "Custom commit message (optional)"
+        required: false
+        default: "Manual JSON parsing update"
+        type: string
 
 jobs:
-  create_pr:
+  generate_and_create_pr:
     runs-on: ubuntu-latest
+    timeout-minutes: 15 # Prevent stuck workflows
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-          cache: 'pip'
+          python-version: "3.12"
+          cache: "pip"
 
-      - name: Generate csv
+      - name: Generate CSV from JSON
         id: csv
         run: |
           pip install -r ./scripts/requirements.txt
-          python3 scripts/generate_csv.py
+          python3 scripts/generate_csv.py 2> csv_error.log || { cat csv_error.log; echo "::set-output name=error::$(cat csv_error.log)"; exit 1; }
 
-      - name: Generate yaml
+      - name: Generate YAML from JSON
         id: yaml
         run: |
-          python3 scripts/generate_yaml.py
+          python3 scripts/generate_yaml.py 2> yaml_error.log || { cat yaml_error.log; echo "::set-output name=error::$(cat yaml_error.log)"; exit 1; }
 
-      - name: Generate markdown/documentation
+      - name: Generate Markdown documentation
         id: markdown
         run: |
-          python3 scripts/generate_markdown.py
+          python3 scripts/generate_markdown.py 2> markdown_error.log || { cat markdown_error.log; echo "::set-output name=error::$(cat markdown_error.log)"; exit 1; }
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
+        if: steps.check_changes.outputs.has_changes == 'true'
         with:
-          commit-message: Manual json parsing
-          labels: submission
+          commit-message: ${{ inputs.commit_message || 'Manual JSON parsing update' }}
+          labels: |
+            json-update
+            automated
           branch: manual_json_parsing
           branch-suffix: timestamp
-          title: Manual json parsin
+          title: "JSON Update: ${{ inputs.commit_message || 'Manual JSON parsing update' }}"
           body: |
-            A manual json parsing
+            # JSON Data Update
+
+            This automated PR was created by the JSON Parsing workflow.
+
+            ## What changed
+            - Generated updated CSV files from JSON source
+            - Generated updated YAML files from JSON source
+            - Updated documentation markdown files
+
+            Generated on: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Triggered by: @${{ github.actor }}
+
+      - name: Post workflow summary
+        run: |
+          if ${{ steps.check_changes.outputs.has_changes == 'true' }}; then
+            echo "### ✅ JSON Parsing completed successfully" >> $GITHUB_STEP_SUMMARY
+            echo "A pull request has been created with the generated files." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### ℹ️ JSON Parsing completed successfully" >> $GITHUB_STEP_SUMMARY
+            echo "No changes detected in the generated files. No PR was created." >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Report errors if any step fails
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const stepOutputs = {
+              csv: `${{ steps.csv.outputs.error || 'No specific error message available' }}`,
+              yaml: `${{ steps.yaml.outputs.error || 'No specific error message available' }}`,
+              markdown: `${{ steps.markdown.outputs.error || 'No specific error message available' }}`
+            };
+
+            const failedSteps = [];
+            if ("${{ steps.csv.outcome }}" == "failure") {
+              failedSteps.push(`Error in generate_csv.py:\n\`\`\`\n${stepOutputs.csv}\n\`\`\``);
+            }
+            if ("${{ steps.yaml.outcome }}" == "failure") {
+              failedSteps.push(`Error in generate_yaml.py:\n\`\`\`\n${stepOutputs.yaml}\n\`\`\``);
+            }
+            if ("${{ steps.markdown.outcome }}" == "failure") {
+              failedSteps.push(`Error in generate_markdown.py:\n\`\`\`\n${stepOutputs.markdown}\n\`\`\``);
+            }
+
+            let errorMessage = "## ❌ JSON Parsing failed\n\n";
+            if (failedSteps.length > 0) {
+              errorMessage += failedSteps.join("\n\n");
+            } else {
+              errorMessage += "An error occurred but specific details could not be determined.";
+            }
+
+            core.summary
+              .addRaw(errorMessage)
+              .write();

@@ -7,6 +7,7 @@ on:
 jobs:
   create_pr:
     runs-on: ubuntu-latest
+    timeout-minutes: 15 # Prevent stuck workflows
 
     steps:
       - name: Checkout repository
@@ -16,23 +17,31 @@ jobs:
 
       - name: Extract issue details
         id: info
-        run: |
-          VENDOR=$(echo "${{ github.event.issue.body }}" | awk '/### Vendor/{getline; getline; print; exit}')
-          if [ "$VENDOR" == "Other" ]; then
-            VENDOR=$(echo "${{ github.event.issue.body }}" | awk '/### Other Vendor/{getline; getline; print; exit}')
-          fi
-          echo "vendor<<EOF" >> $GITHUB_ENV
-          echo "$VENDOR" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueBody = '${{ github.event.issue.body }}';
 
-          CAMERA=$(echo "${{ github.event.issue.body }}" | awk '/### Camera/{getline; getline; print; exit}')
-          echo "camera<<EOF" >> $GITHUB_ENV
-          echo "$CAMERA" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+            // More robust pattern matching with regex
+            const vendorMatch = issueBody.match(/### Vendor\s*\n\s*\n\s*(.*?)(\n\s*\n|\n\s*###|$)/s);
+            const cameraMatch = issueBody.match(/### Camera\s*\n\s*\n\s*(.*?)(\n\s*\n|\n\s*###|$)/s);
+
+            let vendor = vendorMatch ? vendorMatch[1].trim() : '';
+            const camera = cameraMatch ? cameraMatch[1].trim() : '';
+
+            if (vendor === 'Other') {
+              const otherVendorMatch = issueBody.match(/### Other Vendor\s*\n\s*\n\s*(.*?)(\n\s*\n|\n\s*###|$)/s);
+              if (otherVendorMatch) vendor = otherVendorMatch[1].trim();
+            }
+
+            core.exportVariable('vendor', vendor);
+            core.exportVariable('camera', camera);
+
+            console.log(`Extracted Vendor: ${vendor}`);
+            console.log(`Extracted Camera: ${camera}`);
 
       - name: Debug extracted data
         run: |
-          echo "Event Body: ${{ github.event.issue.body }}"
           echo "Vendor: ${{ env.vendor }}"
           echo "Camera: ${{ env.camera }}"
 
@@ -46,27 +55,28 @@ jobs:
         id: python
         run: |
           pip install -r ./scripts/requirements.txt
-          python3 ./scripts/update_sensors_and_generate_json.py "${{ github.event.issue.body }}"
+          python3 ./scripts/update_sensors_and_generate_json.py "${{ github.event.issue.body }}" 2> python_error.log || { cat python_error.log; echo "::set-output name=error::$(cat python_error.log)"; exit 1; }
 
       - name: Generate csv
         id: csv
         run: |
-          python3 scripts/generate_csv.py
+          python3 scripts/generate_csv.py 2> csv_error.log || { cat csv_error.log; echo "::set-output name=error::$(cat csv_error.log)"; exit 1; }
 
       - name: Generate yaml
         id: yaml
         run: |
-          python3 scripts/generate_yaml.py
+          python3 scripts/generate_yaml.py 2> yaml_error.log || { cat yaml_error.log; echo "::set-output name=error::$(cat yaml_error.log)"; exit 1; }
 
       - name: Generate markdown/documentation
         id: markdown
         run: |
-          python3 scripts/generate_markdown.py
+          python3 scripts/generate_markdown.py 2> markdown_error.log || { cat markdown_error.log; echo "::set-output name=error::$(cat markdown_error.log)"; exit 1; }
 
       - name: Create a safe branch name
         run: |
-          name=$(echo '${{ github.event.issue.title }}' | tr ' ' '_' | tr -cd '[:alnum:]_')
-          echo "branch_name=${name}" >> $GITHUB_ENV
+          title=$(echo '${{ github.event.issue.title }}' | tr ' ' '_' | tr -cd '[:alnum:]_-')
+          timestamp=$(date +%Y%m%d%H%M%S)
+          echo "branch_name=sensor_${title}_${timestamp}" >> $GITHUB_ENV
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
@@ -74,7 +84,6 @@ jobs:
           commit-message: New sensor data for ${{ env.camera }} - ${{ env.vendor }}
           labels: submission
           branch: ${{ env.branch_name }}
-          branch-suffix: timestamp
           title: ${{ github.event.issue.title }}
           body: |
             This pull request adds new sensor data for the camera ${{ env.camera }} by ${{ env.vendor }}
@@ -84,6 +93,7 @@ jobs:
             ${{ github.event.issue.body }}
 
       - name: Comment on Issue if all succeeded
+        if: ${{ success() }}
         uses: actions/github-script@v7
         with:
           script: |
@@ -91,7 +101,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: ${{ github.event.issue.number }},
-              body: "Submission sucessfull!"
+              body: "Submission successful! A pull request has been created with your submitted data."
             });
 
       - name: Comment on Issue if Python scripts fail
@@ -99,23 +109,34 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const errors = [];
+            const stepOutputs = {
+              python: `${{ steps.python.outputs.error || 'No specific error message available' }}`,
+              csv: `${{ steps.csv.outputs.error || 'No specific error message available' }}`,
+              yaml: `${{ steps.yaml.outputs.error || 'No specific error message available' }}`,
+              markdown: `${{ steps.markdown.outputs.error || 'No specific error message available' }}`
+            };
+
+            const failedSteps = [];
             if ("${{ steps.python.outcome }}" == "failure") {
-              errors.push('Error happened in update_sensors_and_generate_json.py');
+              failedSteps.push(`Error in update_sensors_and_generate_json.py:\n\`\`\`\n${stepOutputs.python}\n\`\`\``);
             }
             if ("${{ steps.csv.outcome }}" == "failure") {
-              errors.push('Error happened in generate_csv.py');
+              failedSteps.push(`Error in generate_csv.py:\n\`\`\`\n${stepOutputs.csv}\n\`\`\``);
             }
             if ("${{ steps.yaml.outcome }}" == "failure") {
-              errors.push('Error happened in generate_yaml.py');
+              failedSteps.push(`Error in generate_yaml.py:\n\`\`\`\n${stepOutputs.yaml}\n\`\`\``);
             }
             if ("${{ steps.markdown.outcome }}" == "failure") {
-              errors.push('Error happened in generate_markdown.py');
+              failedSteps.push(`Error in generate_markdown.py:\n\`\`\`\n${stepOutputs.markdown}\n\`\`\``);
+            }
+
+            if (failedSteps.length === 0) {
+              failedSteps.push("An error occurred but specific details could not be determined.");
             }
 
             github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: ${{ github.event.issue.number }},
-              body: 'There was an error processing the sensor data:\n\n' + errors.join("\n\n") + '\n\n Please check your submitted data.\nIf everything looks good, an Admin will take a look as soon as possible.'
+              body: 'There was an error processing the sensor data:\n\n' + failedSteps.join("\n\n") + '\n\n Please check your submitted data.\nIf everything looks good, an Admin will take a look as soon as possible.'
             });
