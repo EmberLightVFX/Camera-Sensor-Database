@@ -284,6 +284,8 @@ DJI,Zenmuse X9-8K,17:9 Full Frame,,8192,4320,36,19,40.706,1.417,0.748,1.602,
 DJI,Zenmuse X9-8K,2.39:1 Full Frame,,8192,3424,36.0,15.1,39.039,1.417,0.594,1.536,
 DJI,Zenmuse X9-8K,16:9 Super 35,,5248,2952,23.1,13.0,26.507,0.909,0.512,1.043,
 DJI,Zenmuse X9-8K,17:9 Super 35,,5568,2952,24.5,13.0,27.735,0.965,0.512,1.092,
+Fujifilm,X-H2s,6.2K 3:2,,6240,4160,23.5,15.6,28.207,0.925,0.614,1.11,"4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification). Only HDMI raw output values are provided as sensor downsampling / binning / magnification is untested for built-in formats and may vary between frame-rates, besides the alike 6.2k internal mode, identical to the HDMI 6.2K signal."
+Fujifilm,X-H2s,4.8K 16:9,,4848,2728,18.258,10.23,20.929,0.719,0.403,0.824,"4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification). Only HDMI raw output values are provided as sensor downsampling / binning / magnification is untested for built-in formats and may vary between frame-rates, besides the alike 6.2k internal mode, identical to the HDMI 6.2K signal."
 GoPro,HD HERO,All,,,,5.76,4.29,7.182,0.22,0.17,0.278,
 GoPro,HD HERO2,All,,,,5.76,4.29,7.182,0.22,0.17,0.278,
 GoPro,HERO,All,,,,4.57,3.43,5.714,0.179,0.135,0.224,

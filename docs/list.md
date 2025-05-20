@@ -90,6 +90,9 @@
   - [Zenmuse X9-6K](/dji/zenmusex96k.md)
   - [Zenmuse X9-8K](/dji/zenmusex98k.md)
 
+- [Fujifilm](/ ':disabled')
+  - [X-H2s](/fujifilm/xh2s.md)
+
 - [GoPro](/ ':disabled')
   - [HD HERO](/gopro/hdhero.md)
   - [HD HERO2](/gopro/hdhero2.md)

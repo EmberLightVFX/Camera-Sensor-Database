@@ -1,0 +1,227 @@
+This pull request adds new sensor data for the camera Fujifilm X-H2s by Fujifilm
+
+Closes #34
+
+### References
+
+https://www.fujifilm-x.com/en-gb/products/cameras/x-h2s/specifications/
+
+### Vendor
+
+Other
+
+### Other Vendor
+
+Fujifilm
+
+### Camera
+
+X-H2s
+
+### Additional Information
+
+4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification). Only HDMI raw output values are provided as sensor downsampling / binning / magnification is untested for built-in formats and may vary between frame-rates, besides the alike 6.2k internal mode, identical to the HDMI 6.2K signal.
+
+### Auto-generate sensor sizes
+
+- [x] Do auto-generate sensor sizes
+
+### Name
+
+6.2K 3:2
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+6240 x 4160
+
+### Sensor size (mm)
+
+23.5 x 15.6
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+4.8K 16:9
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+4848 x 2728
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
+
+### Name
+
+_No response_
+
+### Focal Length
+
+_No response_
+
+### Resolution
+
+_No response_
+
+### Sensor size (mm)
+
+_No response_
+
+### Sensor size (inches)
+
+_No response_
