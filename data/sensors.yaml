@@ -6747,6 +6747,23 @@ RED:
           width: 0.276
           height: 0.155
           diagonal: 0.317
+  Komodo 6K OG:
+    info:
+      Other: a
+    sensor dimensions:
+      6K 17:9:
+        focal length: ''
+        resolution:
+          width: 6144
+          height: 3240
+        mm:
+          width: 27.03
+          height: 14.26
+          diagonal: 30.561
+        inches:
+          width: 1.064
+          height: 0.561
+          diagonal: 1.203
   One:
     info: {}
     sensor dimensions: {}
