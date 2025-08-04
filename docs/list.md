@@ -143,6 +143,7 @@
   - [EPIC MYSTERIUM-X 5K S35](/red/epicmysteriumx5ks35.md)
   - [EPIC-W 5K](/red/epicw5k.md)
   - [EPIC-W 8K](/red/epicw8k.md)
+  - [Komodo 6K OG](/red/komodo6kog.md)
   - [One](/red/one.md)
   - [One MX](/red/onemx.md)
   - [RAVEN 4.5K](/red/raven45k.md)
