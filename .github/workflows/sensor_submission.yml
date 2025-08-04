@@ -22,29 +22,20 @@ jobs:
           script: |
             const issueBody = `${{ github.event.issue.body }}`;
 
-            console.log("issueBody:", issueBody);
-
             // More robust pattern matching with regex
             const vendorMatch = issueBody.match(/### Vendor\s*\n\s*\n\s*(.*?)(\n\s*\n|\n\s*###|$)/s);
-            console.log("vendorMatch:", vendorMatch);
             const cameraMatch = issueBody.match(/### Camera\s*\n\s*\n\s*(.*?)(\n\s*\n|\n\s*###|$)/s);
-            console.log("cameraMatch:", cameraMatch);
 
             let vendor = vendorMatch ? vendorMatch[1].trim() : '';
-            console.log("vendor:", vendor);
             const camera = cameraMatch ? cameraMatch[1].trim() : '';
-            console.log("camera:", camera);
 
             if (vendor === 'Other') {
               const otherVendorMatch = issueBody.match(/### Other Vendor\s*\n\s*\n\s*(.*?)(\n\s*\n|\n\s*###|$)/s);
               if (otherVendorMatch) vendor = otherVendorMatch[1].trim();
             }
-            console.log("-1-:");
 
             core.exportVariable('vendor', vendor);
-            console.log("-2-:");
             core.exportVariable('camera', camera);
-            console.log("-3-:");
 
             console.log(`Extracted Vendor: ${vendor}`);
             console.log(`Extracted Camera: ${camera}`);
