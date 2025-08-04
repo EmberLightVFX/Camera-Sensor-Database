@@ -6747,6 +6747,82 @@ RED:
           width: 0.276
           height: 0.155
           diagonal: 0.317
+  Komodo 6K OG:
+    info:
+      Other: 'RF Mount, Global Shutter. Playback Rates at all Resolutions: 23.98,
+        24, 25, 29.97, 30, 50, 59.94, 60 fps
+
+        Sensor: KOMODO 19.9 MP Super 35mm Global Shutter CMOS.
+
+
+        Komodo only supports SDI Out, Genlok and Timecode Sync can be achieved with
+        an adapter unit.'
+    sensor dimensions:
+      6K 17:9:
+        focal length: ''
+        resolution:
+          width: 6144
+          height: 3240
+        mm:
+          width: 27.03
+          height: 14.26
+          diagonal: 30.561
+        inches:
+          width: 1.064
+          height: 0.561
+          diagonal: 1.203
+      4K 17:9:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2160
+        mm:
+          width: 18.02
+          height: 9.5
+          diagonal: 20.371
+        inches:
+          width: 0.709
+          height: 0.374
+          diagonal: 0.802
+      2K 17:9:
+        focal length: ''
+        resolution:
+          width: 2048
+          height: 1080
+        mm:
+          width: 9.01
+          height: 4.75
+          diagonal: 10.185
+        inches:
+          width: 0.355
+          height: 0.187
+          diagonal: 0.401
+      6K 16:9:
+        focal length: ''
+        resolution:
+          width: 5760
+          height: 3240
+        mm:
+          width: 25.34
+          height: 14.26
+          diagonal: 29.077
+        inches:
+          width: 0.998
+          height: 0.561
+          diagonal: 1.145
+      4k 16:9:
+        focal length: ''
+        resolution:
+          width: 3840
+          height: 2160
+        mm:
+          width: 16.9
+          height: 9.5
+          diagonal: 19.387
+        inches:
+          width: 0.665
+          height: 0.374
+          diagonal: 0.763
   One:
     info: {}
     sensor dimensions: {}
