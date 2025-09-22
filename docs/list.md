@@ -1,5 +1,6 @@
 - [ARRI](/ ':disabled')
   - [ALEXA](/arri/alexa.md)
+  - [ALEXA 265](/arri/alexa265.md)
   - [ALEXA 35](/arri/alexa35.md)
   - [ALEXA 65](/arri/alexa65.md)
   - [ALEXA LF](/arri/alexalf.md)

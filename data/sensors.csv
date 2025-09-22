@@ -1,5 +1,8 @@
 Vendor,Camera,Sensor Dimensions Name,Focal Length,Resolution Width,Resolution Height,Sensor mm Width,Sensor mm Height,Sensor mm Diagonal,Sensor Inches Width,Sensor Inches Height,Sensor Inches Diagonal,Info
 ARRI,ALEXA,All,,,,23.76,13.37,27.263,0.935,0.526,1.073,
+ARRI,ALEXA 265,6.5K 2.12:1 Open Gate,,6560,3100,54.12,25.58,59.861,2.131,1.007,2.357,
+ARRI,ALEXA 265,5.1K 1.65:1,,5120,3100,42.24,25.58,49.382,1.663,1.007,1.944,
+ARRI,ALEXA 265,4.5K LF 3:2,,4448,3096,36.696,25.547,44.713,1.445,1.006,1.761,
 ARRI,ALEXA 35,4.6K 3:2 Open Gate,,4608,3164,28.0,19.2,33.951,1.102,0.756,1.336,
 ARRI,ALEXA 35,4.6K 16:9,,4608,2592,28.0,15.7,32.101,1.102,0.618,1.263,
 ARRI,ALEXA 35,4K 16:9,,4096,2304,24.9,14.0,28.566,0.98,0.551,1.124,

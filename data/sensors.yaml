@@ -15,6 +15,48 @@ ARRI:
           width: 0.935
           height: 0.526
           diagonal: 1.073
+  ALEXA 265:
+    info: {}
+    sensor dimensions:
+      6.5K 2.12:1 Open Gate:
+        focal length: ''
+        resolution:
+          width: 6560
+          height: 3100
+        mm:
+          width: 54.12
+          height: 25.58
+          diagonal: 59.861
+        inches:
+          width: 2.131
+          height: 1.007
+          diagonal: 2.357
+      5.1K 1.65:1:
+        focal length: ''
+        resolution:
+          width: 5120
+          height: 3100
+        mm:
+          width: 42.24
+          height: 25.58
+          diagonal: 49.382
+        inches:
+          width: 1.663
+          height: 1.007
+          diagonal: 1.944
+      4.5K LF 3:2:
+        focal length: ''
+        resolution:
+          width: 4448
+          height: 3096
+        mm:
+          width: 36.696
+          height: 25.547
+          diagonal: 44.713
+        inches:
+          width: 1.445
+          height: 1.006
+          diagonal: 1.761
   ALEXA 35:
     info: {}
     sensor dimensions:
