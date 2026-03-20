@@ -12932,6 +12932,28 @@
         }
       }
     },
+    "FX3": {
+      "info": {},
+      "sensor dimensions": {
+        "All": {
+          "focal length": "",
+          "resolution": {
+            "width": "",
+            "height": ""
+          },
+          "mm": {
+            "width": 35.6,
+            "height": 23.8,
+            "diagonal": 42.823
+          },
+          "inches": {
+            "width": 1.402,
+            "height": 0.937,
+            "diagonal": 1.686
+          }
+        }
+      }
+    },
     "HDC-4800": {
       "info": {},
       "sensor dimensions": {
