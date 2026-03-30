@@ -39,6 +39,7 @@
   - [URSA 4.6K](/blackmagic/ursa46k.md)
   - [URSA 4K](/blackmagic/ursa4k.md)
   - [URSA Broadcast](/blackmagic/ursabroadcast.md)
+  - [URSA Cine Immersive](/blackmagic/ursacineimmersive.md)
   - [URSA Mini 4.6k](/blackmagic/ursamini46k.md)
   - [URSA Mini 4k](/blackmagic/ursamini4k.md)
   - [URSA Mini Pro 4.6K](/blackmagic/ursaminipro46k.md)
