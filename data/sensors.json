@@ -3371,6 +3371,28 @@
         }
       }
     },
+    "URSA Cine Immersive": {
+      "info": {},
+      "sensor dimensions": {
+        "8K": {
+          "focal length": "",
+          "resolution": {
+            "width": 8160,
+            "height": 7200
+          },
+          "mm": {
+            "width": 23.66,
+            "height": 20.88,
+            "diagonal": 31.556
+          },
+          "inches": {
+            "width": 0.931,
+            "height": 0.822,
+            "diagonal": 1.242
+          }
+        }
+      }
+    },
     "URSA Mini 4.6k": {
       "info": {},
       "sensor dimensions": {
