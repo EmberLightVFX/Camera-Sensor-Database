@@ -184,6 +184,7 @@
   - [PMW-F3](/sony/pmwf3.md)
   - [PXW-FS5](/sony/pxwfs5.md)
   - [PXW-FS7](/sony/pxwfs7.md)
+  - [PXW-FX9](/sony/pxwfx9.md)
   - [PXW-Z150](/sony/pxwz150.md)
   - [SRW-9000](/sony/srw9000.md)
   - [SRW-9000PL](/sony/srw9000pl.md)
