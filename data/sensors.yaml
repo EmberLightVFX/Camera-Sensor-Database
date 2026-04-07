@@ -10110,6 +10110,48 @@ Sony:
           width: 0.929
           height: 0.523
           diagonal: 1.066
+  PXW-FX9:
+    info: {}
+    sensor dimensions:
+      FF 6K (DCI 4K(17:9)):
+        focal length: ''
+        resolution:
+          width: 6008
+          height: 3168
+        mm:
+          width: 35.7
+          height: 18.8
+          diagonal: 40.348
+        inches:
+          width: 1.406
+          height: 0.74
+          diagonal: 1.589
+      5K (DCI 4K(17:9)):
+        focal length: ''
+        resolution:
+          width: 5008
+          height: 2640
+        mm:
+          width: 29.7
+          height: 15.7
+          diagonal: 33.594
+        inches:
+          width: 1.169
+          height: 0.618
+          diagonal: 1.322
+      S35 4K (DCI 4K(17:9)):
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2160
+        mm:
+          width: 24.3
+          height: 12.8
+          diagonal: 27.465
+        inches:
+          width: 0.957
+          height: 0.504
+          diagonal: 1.082
   PXW-Z150:
     info: {}
     sensor dimensions:
