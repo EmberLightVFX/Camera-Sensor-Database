@@ -13696,6 +13696,164 @@
         }
       }
     },
+    "Venice 2 8K": {
+      "info": {},
+      "sensor dimensions": {
+        "8.6K 3:2 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 8640,
+            "height": 5760
+          },
+          "mm": {
+            "width": 35.9,
+            "height": 24.0,
+            "diagonal": 43.183
+          },
+          "inches": {
+            "width": 1.413,
+            "height": 0.945,
+            "diagonal": 1.7
+          }
+        },
+        "8.6K 17:9 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 8640,
+            "height": 4556
+          },
+          "mm": {
+            "width": 35.9,
+            "height": 19.0,
+            "diagonal": 40.618
+          },
+          "inches": {
+            "width": 1.413,
+            "height": 0.748,
+            "diagonal": 1.599
+          }
+        },
+        "8.2K 2.39:1 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 8192,
+            "height": 3432
+          },
+          "mm": {
+            "width": 34.1,
+            "height": 14.3,
+            "diagonal": 36.977
+          },
+          "inches": {
+            "width": 1.343,
+            "height": 0.563,
+            "diagonal": 1.456
+          }
+        },
+        "8.2K 17:9 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 8192,
+            "height": 4320
+          },
+          "mm": {
+            "width": 34.1,
+            "height": 18.0,
+            "diagonal": 38.559
+          },
+          "inches": {
+            "width": 1.343,
+            "height": 0.709,
+            "diagonal": 1.519
+          }
+        },
+        "7.6K 16:9 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 7680,
+            "height": 4320
+          },
+          "mm": {
+            "width": 31.9,
+            "height": 18.0,
+            "diagonal": 36.628
+          },
+          "inches": {
+            "width": 1.256,
+            "height": 0.709,
+            "diagonal": 1.442
+          }
+        },
+        "8.1K 16:9 Full Frame": {
+          "focal length": "",
+          "resolution": {
+            "width": 8100,
+            "height": 4556
+          },
+          "mm": {
+            "width": 33.7,
+            "height": 19.0,
+            "diagonal": 38.687
+          },
+          "inches": {
+            "width": 1.327,
+            "height": 0.748,
+            "diagonal": 1.523
+          }
+        },
+        "5.8K 4:3 Super 35": {
+          "focal length": "",
+          "resolution": {
+            "width": 5792,
+            "height": 4276
+          },
+          "mm": {
+            "width": 24.1,
+            "height": 17.8,
+            "diagonal": 29.961
+          },
+          "inches": {
+            "width": 0.949,
+            "height": 0.701,
+            "diagonal": 1.18
+          }
+        },
+        "5.4K 16:9 Super 35": {
+          "focal length": "",
+          "resolution": {
+            "width": 5434,
+            "height": 3056
+          },
+          "mm": {
+            "width": 22.6,
+            "height": 12.7,
+            "diagonal": 25.924
+          },
+          "inches": {
+            "width": 0.89,
+            "height": 0.5,
+            "diagonal": 1.021
+          }
+        },
+        "5.5K 2.39:1 Super 35": {
+          "focal length": "",
+          "resolution": {
+            "width": 5480,
+            "height": 2296
+          },
+          "mm": {
+            "width": 22.8,
+            "height": 9.6,
+            "diagonal": 24.739
+          },
+          "inches": {
+            "width": 0.898,
+            "height": 0.378,
+            "diagonal": 0.974
+          }
+        }
+      }
+    },
     "ZV-E1": {
       "info": {},
       "sensor dimensions": {
