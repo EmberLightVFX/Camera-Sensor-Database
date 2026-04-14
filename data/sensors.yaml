@@ -4018,6 +4018,113 @@ DJI:
           height: 0.512
           diagonal: 1.092
 Fujifilm:
+  GFX ETERNA 55:
+    info: {}
+    sensor dimensions:
+      8K 16:9:
+        focal length: ''
+        resolution:
+          width: 7680
+          height: 4320
+        mm:
+          width: 28.88
+          height: 16.24
+          diagonal: 33.133
+        inches:
+          width: 1.137
+          height: 0.639
+          diagonal: 1.304
+      8K 17:9:
+        focal length: ''
+        resolution:
+          width: 8192
+          height: 4320
+        mm:
+          width: 30.8
+          height: 16.24
+          diagonal: 34.819
+        inches:
+          width: 1.213
+          height: 0.639
+          diagonal: 1.371
+      5.8K 2.39:1:
+        focal length: ''
+        resolution:
+          width: 5824
+          height: 2436
+        mm:
+          width: 43.8
+          height: 18.32
+          diagonal: 47.477
+        inches:
+          width: 1.724
+          height: 0.721
+          diagonal: 1.869
+      4K 4:3 (Open Gate):
+        focal length: ''
+        resolution:
+          width: 3840
+          height: 2880
+        mm:
+          width: 43.63
+          height: 32.71
+          diagonal: 54.53
+        inches:
+          width: 1.718
+          height: 1.288
+          diagonal: 2.147
+      4K 16:9:
+        focal length: ''
+        resolution:
+          width: 3840
+          height: 2160
+        mm:
+          width: 43.63
+          height: 24.55
+          diagonal: 50.063
+        inches:
+          width: 1.718
+          height: 0.967
+          diagonal: 1.971
+      4K 17:9:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2160
+        mm:
+          width: 43.63
+          height: 23.01
+          diagonal: 49.326
+        inches:
+          width: 1.718
+          height: 0.906
+          diagonal: 1.942
+      FHD 16:9:
+        focal length: ''
+        resolution:
+          width: 1920
+          height: 1080
+        mm:
+          width: 43.63
+          height: 24.55
+          diagonal: 50.063
+        inches:
+          width: 1.718
+          height: 0.967
+          diagonal: 1.971
+      FHD 17:9:
+        focal length: ''
+        resolution:
+          width: 2048
+          height: 1080
+        mm:
+          width: 43.63
+          height: 23.01
+          diagonal: 49.326
+        inches:
+          width: 1.718
+          height: 0.906
+          diagonal: 1.942
   X-H2s:
     info:
       Other: 4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification).

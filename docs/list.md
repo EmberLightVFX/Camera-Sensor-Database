@@ -93,6 +93,7 @@
   - [Zenmuse X9-8K](/dji/zenmusex98k.md)
 
 - [Fujifilm](/ ':disabled')
+  - [GFX ETERNA 55](/fujifilm/gfxeterna55.md)
   - [X-H2s](/fujifilm/xh2s.md)
 
 - [GoPro](/ ':disabled')

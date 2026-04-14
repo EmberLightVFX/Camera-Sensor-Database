@@ -1,10 +1,10 @@
-This pull request adds new sensor data for the camera Fujifilm X-H2s by Fujifilm
+This pull request adds new sensor data for the camera GFX ETERNA 55 by Fujifilm
 
-Closes #34
+Closes #51
 
 ### References
 
-https://www.fujifilm-x.com/en-gb/products/cameras/x-h2s/specifications/
+https://dl.fujifilm-x.com/support/lut/GFX_ETERNA_WhitePaper_260206_v101.pdf
 
 ### Vendor
 
@@ -16,19 +16,19 @@ Fujifilm
 
 ### Camera
 
-X-H2s
+GFX ETERNA 55
 
 ### Additional Information
 
-4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification). Only HDMI raw output values are provided as sensor downsampling / binning / magnification is untested for built-in formats and may vary between frame-rates, besides the alike 6.2k internal mode, identical to the HDMI 6.2K signal.
+_No response_
 
 ### Auto-generate sensor sizes
 
-- [x] Do auto-generate sensor sizes
+- [ ] Do auto-generate sensor sizes
 
 ### Name
 
-6.2K 3:2
+8K 16:9
 
 ### Focal Length
 
@@ -36,11 +36,11 @@ _No response_
 
 ### Resolution
 
-6240 x 4160
+7680 x 4320
 
 ### Sensor size (mm)
 
-23.5 x 15.6
+28.88 x 16.24
 
 ### Sensor size (inches)
 
@@ -48,7 +48,7 @@ _No response_
 
 ### Name
 
-4.8K 16:9
+8K 17:9
 
 ### Focal Length
 
@@ -56,11 +56,11 @@ _No response_
 
 ### Resolution
 
-4848 x 2728
+8192 x 4320
 
 ### Sensor size (mm)
 
-_No response_
+30.80 x 16.24
 
 ### Sensor size (inches)
 
@@ -68,7 +68,7 @@ _No response_
 
 ### Name
 
-_No response_
+5.8K 2.39:1
 
 ### Focal Length
 
@@ -76,11 +76,11 @@ _No response_
 
 ### Resolution
 
-_No response_
+5824 x 2436
 
 ### Sensor size (mm)
 
-_No response_
+43.80 x 18.32
 
 ### Sensor size (inches)
 
@@ -88,7 +88,7 @@ _No response_
 
 ### Name
 
-_No response_
+4K 4:3 (Open Gate)
 
 ### Focal Length
 
@@ -96,11 +96,11 @@ _No response_
 
 ### Resolution
 
-_No response_
+3840 x 2880
 
 ### Sensor size (mm)
 
-_No response_
+43.63 x 32.71
 
 ### Sensor size (inches)
 
@@ -108,7 +108,7 @@ _No response_
 
 ### Name
 
-_No response_
+4K 16:9
 
 ### Focal Length
 
@@ -116,11 +116,11 @@ _No response_
 
 ### Resolution
 
-_No response_
+3840 x 2160
 
 ### Sensor size (mm)
 
-_No response_
+43.63 x 24.55
 
 ### Sensor size (inches)
 
@@ -128,7 +128,7 @@ _No response_
 
 ### Name
 
-_No response_
+4K 17:9
 
 ### Focal Length
 
@@ -136,11 +136,11 @@ _No response_
 
 ### Resolution
 
-_No response_
+4096 x 2160
 
 ### Sensor size (mm)
 
-_No response_
+43.63 x 23.01
 
 ### Sensor size (inches)
 
@@ -148,7 +148,7 @@ _No response_
 
 ### Name
 
-_No response_
+FHD 16:9
 
 ### Focal Length
 
@@ -156,11 +156,11 @@ _No response_
 
 ### Resolution
 
-_No response_
+1920 x 1080
 
 ### Sensor size (mm)
 
-_No response_
+43.63 x 24.55
 
 ### Sensor size (inches)
 
@@ -168,7 +168,7 @@ _No response_
 
 ### Name
 
-_No response_
+FHD 17:9
 
 ### Focal Length
 
@@ -176,11 +176,11 @@ _No response_
 
 ### Resolution
 
-_No response_
+2048 x 1080
 
 ### Sensor size (mm)
 
-_No response_
+43.63 x 23.01
 
 ### Sensor size (inches)
 
