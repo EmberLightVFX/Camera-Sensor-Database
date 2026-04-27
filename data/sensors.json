@@ -10986,6 +10986,164 @@
         }
       }
     },
+    "V-RAPTOR 8K VV": {
+      "info": {},
+      "sensor dimensions": {
+        "8K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 8192,
+            "height": 4320
+          },
+          "mm": {
+            "width": 40.96,
+            "height": 21.6,
+            "diagonal": 46.306
+          },
+          "inches": {
+            "width": 1.613,
+            "height": 0.85,
+            "diagonal": 1.823
+          }
+        },
+        "8K 2:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 8192,
+            "height": 4096
+          },
+          "mm": {
+            "width": 40.96,
+            "height": 20.48,
+            "diagonal": 45.795
+          },
+          "inches": {
+            "width": 1.613,
+            "height": 0.806,
+            "diagonal": 1.803
+          }
+        },
+        "8K 2.4:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 8192,
+            "height": 3456
+          },
+          "mm": {
+            "width": 8192,
+            "height": 3456,
+            "diagonal": 8891.164
+          },
+          "inches": {
+            "width": 322.52,
+            "height": 136.063,
+            "diagonal": 350.046
+          }
+        },
+        "8K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 7680,
+            "height": 4320
+          },
+          "mm": {
+            "width": 7680,
+            "height": 4320,
+            "diagonal": 8811.629
+          },
+          "inches": {
+            "width": 302.362,
+            "height": 170.079,
+            "diagonal": 346.914
+          }
+        },
+        "8K 1:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 4320,
+            "height": 4320
+          },
+          "mm": {
+            "width": 4320,
+            "height": 4320,
+            "diagonal": 6109.403
+          },
+          "inches": {
+            "width": 170.079,
+            "height": 170.079,
+            "diagonal": 240.528
+          }
+        },
+        "6K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 6144,
+            "height": 3240
+          },
+          "mm": {
+            "width": 30.72,
+            "height": 16.2,
+            "diagonal": 34.73
+          },
+          "inches": {
+            "width": 1.209,
+            "height": 0.638,
+            "diagonal": 1.367
+          }
+        },
+        "6K 2:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 6144,
+            "height": 3072
+          },
+          "mm": {
+            "width": 30.72,
+            "height": 15.36,
+            "diagonal": 34.346
+          },
+          "inches": {
+            "width": 1.209,
+            "height": 0.605,
+            "diagonal": 1.352
+          }
+        },
+        "6K 2.4:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 6144,
+            "height": 2592
+          },
+          "mm": {
+            "width": 30.72,
+            "height": 12.87,
+            "diagonal": 33.307
+          },
+          "inches": {
+            "width": 1.209,
+            "height": 0.507,
+            "diagonal": 1.311
+          }
+        },
+        "6K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 5760,
+            "height": 3240
+          },
+          "mm": {
+            "width": 28.8,
+            "height": 16.2,
+            "diagonal": 33.044
+          },
+          "inches": {
+            "width": 1.134,
+            "height": 0.638,
+            "diagonal": 1.301
+          }
+        }
+      }
+    },
     "WEAPON DRAGON 6K S35": {
       "info": {},
       "sensor dimensions": {
