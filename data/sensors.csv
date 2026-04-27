@@ -784,6 +784,9 @@ Sony,F55,All,,,,24.0,12.7,27.153,0.945,0.5,1.069,
 Sony,F65,All,,,,24.7,13.1,27.959,0.972,0.516,1.1,
 Sony,FDR-X1000V,All,,,,6.19,4.57,7.694,0.243,0.179,0.302,
 Sony,FX3,All,,,,35.6,23.8,42.823,1.402,0.937,1.686,
+Sony,FX6,Native/3:2,,,,35.6,23.8,42.823,1.402,0.937,1.686,"Sony only provides the native sensor dimensions and there is no data available for the exact sensor dimensions for cropped recording modes (i.e. S&Q mode over 60fps). Sensor entry will be updated if/when Sony releases this information.
+
+The provided native sensor dimensions result in a 3:2 aspect ratio, but shooting Open Gate is not possible on the FX6, so currently 17:9 is the recording format that uses the most area of the camera's native sensor."
 Sony,HDC-4800,All,,,,23.6,13.3,27.09,0.929,0.523,1.066,
 Sony,HDC-F950,All,,,,9.59,5.39,11.001,0.377,0.212,0.433,
 Sony,HDC-P1,All,,,,9.59,5.39,11.001,0.377,0.212,0.433,
