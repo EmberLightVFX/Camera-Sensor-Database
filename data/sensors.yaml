@@ -8673,6 +8673,32 @@ RED:
           width: 0.378
           height: 0.213
           diagonal: 0.434
+      2K 1:1:
+        focal length: ''
+        resolution:
+          width: 1080
+          height: 1080
+        mm:
+          width: 5.4
+          height: 5.4
+          diagonal: 7.637
+        inches:
+          width: 0.213
+          height: 0.213
+          diagonal: 0.301
+      4K 8:1:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 512
+        mm:
+          width: 20.48
+          height: 2.56
+          diagonal: 20.639
+        inches:
+          width: 0.806
+          height: 0.101
+          diagonal: 0.812
   WEAPON DRAGON 6K S35:
     info: {}
     sensor dimensions:
