@@ -8296,19 +8296,6 @@ RED:
   V-RAPTOR 8K VV:
     info: {}
     sensor dimensions:
-      All:
-        focal length: ''
-        resolution:
-          width: ''
-          height: ''
-        mm:
-          width: 40.96
-          height: 21.6
-          diagonal: 46.306
-        inches:
-          width: 1.613
-          height: 0.85
-          diagonal: 1.823
       8K 17:9:
         focal length: ''
         resolution:
