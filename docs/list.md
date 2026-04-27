@@ -160,6 +160,7 @@
 
 - [Sony](/ ':disabled')
   - [A7 IV](/sony/a7iv.md)
+  - [BURANO](/sony/burano.md)
   - [F23](/sony/f23.md)
   - [F35](/sony/f35.md)
   - [F5](/sony/f5.md)
