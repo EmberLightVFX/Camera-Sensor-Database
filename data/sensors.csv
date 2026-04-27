@@ -298,6 +298,10 @@ Fujifilm,GFX ETERNA 55,FHD 16:9,,1920,1080,43.63,24.55,50.063,1.718,0.967,1.971,
 Fujifilm,GFX ETERNA 55,FHD 17:9,,2048,1080,43.63,23.01,49.326,1.718,0.906,1.942,
 Fujifilm,X-H2s,6.2K 3:2,,6240,4160,23.5,15.6,28.207,0.925,0.614,1.11,"4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification). Only HDMI raw output values are provided as sensor downsampling / binning / magnification is untested for built-in formats and may vary between frame-rates, besides the alike 6.2k internal mode, identical to the HDMI 6.2K signal."
 Fujifilm,X-H2s,4.8K 16:9,,4848,2728,18.258,10.23,20.929,0.719,0.403,0.824,"4.8K 16:9 is a 1:1 format (no sampling/binning) (1.29x magnification). Only HDMI raw output values are provided as sensor downsampling / binning / magnification is untested for built-in formats and may vary between frame-rates, besides the alike 6.2k internal mode, identical to the HDMI 6.2K signal."
+Fujifilm,X-S20,6.2K 3:2 (Open Gate),,6240,4160,23.5,15.6,28.207,0.925,0.614,1.11,Non-native aspect ratios derived from crop factor values listed above.
+Fujifilm,X-S20,4K DCI,,4090,2160,23.5,12.4,26.571,0.925,0.488,1.046,Non-native aspect ratios derived from crop factor values listed above.
+Fujifilm,X-S20,4K UHD,,4096,2160,23.5,13.2,26.953,0.925,0.52,1.061,Non-native aspect ratios derived from crop factor values listed above.
+Fujifilm,X-S20,4K DCI (1.18x Crop),,4096,2160,19.9,11.2,22.835,0.783,0.441,0.899,Non-native aspect ratios derived from crop factor values listed above.
 GoPro,HD HERO,All,,,,5.76,4.29,7.182,0.22,0.17,0.278,
 GoPro,HD HERO2,All,,,,5.76,4.29,7.182,0.22,0.17,0.278,
 GoPro,HERO,All,,,,4.57,3.43,5.714,0.179,0.135,0.224,

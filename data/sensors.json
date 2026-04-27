@@ -5532,6 +5532,81 @@
           }
         }
       }
+    },
+    "X-S20": {
+      "info": {
+        "Other": "Non-native aspect ratios derived from crop factor values listed above."
+      },
+      "sensor dimensions": {
+        "6.2K 3:2 (Open Gate)": {
+          "focal length": "",
+          "resolution": {
+            "width": 6240,
+            "height": 4160
+          },
+          "mm": {
+            "width": 23.5,
+            "height": 15.6,
+            "diagonal": 28.207
+          },
+          "inches": {
+            "width": 0.925,
+            "height": 0.614,
+            "diagonal": 1.11
+          }
+        },
+        "4K DCI": {
+          "focal length": "",
+          "resolution": {
+            "width": 4090,
+            "height": 2160
+          },
+          "mm": {
+            "width": 23.5,
+            "height": 12.4,
+            "diagonal": 26.571
+          },
+          "inches": {
+            "width": 0.925,
+            "height": 0.488,
+            "diagonal": 1.046
+          }
+        },
+        "4K UHD": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 2160
+          },
+          "mm": {
+            "width": 23.5,
+            "height": 13.2,
+            "diagonal": 26.953
+          },
+          "inches": {
+            "width": 0.925,
+            "height": 0.52,
+            "diagonal": 1.061
+          }
+        },
+        "4K DCI (1.18x Crop)": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 2160
+          },
+          "mm": {
+            "width": 19.9,
+            "height": 11.2,
+            "diagonal": 22.835
+          },
+          "inches": {
+            "width": 0.783,
+            "height": 0.441,
+            "diagonal": 0.899
+          }
+        }
+      }
     }
   },
   "GoPro": {

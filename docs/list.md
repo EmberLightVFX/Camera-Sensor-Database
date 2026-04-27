@@ -95,6 +95,7 @@
 - [Fujifilm](/ ':disabled')
   - [GFX ETERNA 55](/fujifilm/gfxeterna55.md)
   - [X-H2s](/fujifilm/xh2s.md)
+  - [X-S20](/fujifilm/xs20.md)
 
 - [GoPro](/ ':disabled')
   - [HD HERO](/gopro/hdhero.md)
