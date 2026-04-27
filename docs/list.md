@@ -166,6 +166,7 @@
   - [F65](/sony/f65.md)
   - [FDR-X1000V](/sony/fdrx1000v.md)
   - [FX3](/sony/fx3.md)
+  - [FX6](/sony/fx6.md)
   - [HDC-4800](/sony/hdc4800.md)
   - [HDC-F950](/sony/hdcf950.md)
   - [HDC-P1](/sony/hdcp1.md)
