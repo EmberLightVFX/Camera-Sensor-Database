@@ -8413,6 +8413,136 @@ RED:
           width: 1.134
           height: 0.638
           diagonal: 1.301
+      6K 1:1:
+        focal length: ''
+        resolution:
+          width: 3240
+          height: 3240
+        mm:
+          width: 16.2
+          height: 16.2
+          diagonal: 22.91
+        inches:
+          width: 0.638
+          height: 0.638
+          diagonal: 0.902
+      5K 17:9:
+        focal length: ''
+        resolution:
+          width: 5120
+          height: 2700
+        mm:
+          width: 25.6
+          height: 13.5
+          diagonal: 28.941
+        inches:
+          width: 1.008
+          height: 0.531
+          diagonal: 1.139
+      5K 2:1:
+        focal length: ''
+        resolution:
+          width: 5120
+          height: 2560
+        mm:
+          width: 25.6
+          height: 12.8
+          diagonal: 28.622
+        inches:
+          width: 1.008
+          height: 0.504
+          diagonal: 1.127
+      5K 2.4:1:
+        focal length: ''
+        resolution:
+          width: 5120
+          height: 2160
+        mm:
+          width: 25.6
+          height: 10.8
+          diagonal: 27.785
+        inches:
+          width: 1.008
+          height: 0.425
+          diagonal: 1.094
+      5K 16:9:
+        focal length: ''
+        resolution:
+          width: 4800
+          height: 2700
+        mm:
+          width: 24.0
+          height: 13.5
+          diagonal: 27.536
+        inches:
+          width: 0.945
+          height: 0.531
+          diagonal: 1.084
+      5K 1:1:
+        focal length: ''
+        resolution:
+          width: 2700
+          height: 2700
+        mm:
+          width: 13.5
+          height: 13.5
+          diagonal: 19.092
+        inches:
+          width: 0.531
+          height: 0.531
+          diagonal: 0.751
+      4K 17:9:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2160
+        mm:
+          width: 20.48
+          height: 10.8
+          diagonal: 23.153
+        inches:
+          width: 0.806
+          height: 0.425
+          diagonal: 0.911
+      4K 2:1:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 2048
+        mm:
+          width: 20.48
+          height: 10.24
+          diagonal: 22.897
+        inches:
+          width: 0.806
+          height: 0.403
+          diagonal: 0.901
+      4K 2.4:1:
+        focal length: ''
+        resolution:
+          width: 4096
+          height: 1728
+        mm:
+          width: 20.48
+          height: 8.64
+          diagonal: 22.228
+        inches:
+          width: 0.806
+          height: 0.34
+          diagonal: 0.875
+      4K 16:9:
+        focal length: ''
+        resolution:
+          width: 3840
+          height: 2160
+        mm:
+          width: 19.2
+          height: 10.8
+          diagonal: 22.029
+        inches:
+          width: 0.756
+          height: 0.425
+          diagonal: 0.867
   WEAPON DRAGON 6K S35:
     info: {}
     sensor dimensions:
