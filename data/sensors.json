@@ -12963,6 +12963,147 @@
         }
       }
     },
+    "BURANO": {
+      "info": {},
+      "sensor dimensions": {
+        "FF 8.6K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 8632,
+            "height": 4856
+          },
+          "mm": {
+            "width": 35.9,
+            "height": 20.2,
+            "diagonal": 41.193
+          },
+          "inches": {
+            "width": 1.413,
+            "height": 0.795,
+            "diagonal": 1.621
+          }
+        },
+        "FF 8.6K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 8632,
+            "height": 4552
+          },
+          "mm": {
+            "width": 35.9,
+            "height": 18.9,
+            "diagonal": 40.571
+          },
+          "inches": {
+            "width": 1.413,
+            "height": 0.744,
+            "diagonal": 1.597
+          }
+        },
+        "FFc 6K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 6052,
+            "height": 3404
+          },
+          "mm": {
+            "width": 33.6,
+            "height": 18.9,
+            "diagonal": 38.551
+          },
+          "inches": {
+            "width": 1.323,
+            "height": 0.744,
+            "diagonal": 1.518
+          }
+        },
+        "FFc 3.8K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 3840,
+            "height": 2160
+          },
+          "mm": {
+            "width": 32.0,
+            "height": 18.0,
+            "diagonal": 36.715
+          },
+          "inches": {
+            "width": 1.26,
+            "height": 0.709,
+            "diagonal": 1.446
+          }
+        },
+        "FFc 6K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 6052,
+            "height": 3192
+          },
+          "mm": {
+            "width": 33.6,
+            "height": 17.7,
+            "diagonal": 37.977
+          },
+          "inches": {
+            "width": 1.323,
+            "height": 0.697,
+            "diagonal": 1.495
+          }
+        },
+        "S35 5.8K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 5760,
+            "height": 3240
+          },
+          "mm": {
+            "width": 24.0,
+            "height": 13.5,
+            "diagonal": 27.536
+          },
+          "inches": {
+            "width": 0.945,
+            "height": 0.531,
+            "diagonal": 1.084
+          }
+        },
+        "S35 5.8K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 5760,
+            "height": 3036
+          },
+          "mm": {
+            "width": 24.0,
+            "height": 12.6,
+            "diagonal": 27.106
+          },
+          "inches": {
+            "width": 0.945,
+            "height": 0.496,
+            "diagonal": 1.067
+          }
+        },
+        "S35c 4K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 4096,
+            "height": 216
+          },
+          "mm": {
+            "width": 17.0,
+            "height": 9.0,
+            "diagonal": 19.235
+          },
+          "inches": {
+            "width": 0.669,
+            "height": 0.354,
+            "diagonal": 0.757
+          }
+        }
+      }
+    },
     "F23": {
       "info": {},
       "sensor dimensions": {
