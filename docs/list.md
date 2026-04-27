@@ -153,6 +153,7 @@
   - [SCARLET MX](/red/scarletmx.md)
   - [SCARLET-W 5K](/red/scarletw5k.md)
   - [SCARLET-W 6K](/red/scarletw6k.md)
+  - [V-RAPTOR 8K VV](/red/vraptor8kvv.md)
   - [WEAPON DRAGON 6K S35](/red/weapondragon6ks35.md)
   - [WEAPON HELIUM 8K S35](/red/weaponhelium8ks35.md)
   - [WEAPON MONSTRO 8K W](/red/weaponmonstro8kw.md)
