@@ -1,3 +1,6 @@
+# Custom
+pr_body.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
