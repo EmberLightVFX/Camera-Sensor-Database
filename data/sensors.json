@@ -11311,6 +11311,176 @@
             "height": 0.425,
             "diagonal": 0.867
           }
+        },
+        "4K 1:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 2160,
+            "height": 2160
+          },
+          "mm": {
+            "width": 10.8,
+            "height": 10.8,
+            "diagonal": 15.274
+          },
+          "inches": {
+            "width": 0.425,
+            "height": 0.425,
+            "diagonal": 0.601
+          }
+        },
+        "3K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 3072,
+            "height": 1620
+          },
+          "mm": {
+            "width": 15.36,
+            "height": 8.1,
+            "diagonal": 17.365
+          },
+          "inches": {
+            "width": 0.605,
+            "height": 0.319,
+            "diagonal": 0.684
+          }
+        },
+        "3K 2:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 3072,
+            "height": 1536
+          },
+          "mm": {
+            "width": 15.36,
+            "height": 7.68,
+            "diagonal": 17.173
+          },
+          "inches": {
+            "width": 0.605,
+            "height": 0.302,
+            "diagonal": 0.676
+          }
+        },
+        "3K 2.4:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 3072,
+            "height": 1296
+          },
+          "mm": {
+            "width": 15.36,
+            "height": 6.48,
+            "diagonal": 16.671
+          },
+          "inches": {
+            "width": 0.605,
+            "height": 0.255,
+            "diagonal": 0.657
+          }
+        },
+        "3K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 2880,
+            "height": 1620
+          },
+          "mm": {
+            "width": 14.4,
+            "height": 8.1,
+            "diagonal": 16.522
+          },
+          "inches": {
+            "width": 0.567,
+            "height": 0.319,
+            "diagonal": 0.651
+          }
+        },
+        "3K 1:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 1620,
+            "height": 1620
+          },
+          "mm": {
+            "width": 8.1,
+            "height": 8.1,
+            "diagonal": 11.455
+          },
+          "inches": {
+            "width": 0.319,
+            "height": 0.319,
+            "diagonal": 0.451
+          }
+        },
+        "2K 17:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 2048,
+            "height": 1080
+          },
+          "mm": {
+            "width": 10.24,
+            "height": 5.4,
+            "diagonal": 11.577
+          },
+          "inches": {
+            "width": 0.403,
+            "height": 0.213,
+            "diagonal": 0.456
+          }
+        },
+        "2K 2:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 2048,
+            "height": 1024
+          },
+          "mm": {
+            "width": 10.24,
+            "height": 5.12,
+            "diagonal": 11.449
+          },
+          "inches": {
+            "width": 0.403,
+            "height": 0.202,
+            "diagonal": 0.451
+          }
+        },
+        "2K 2.4:1": {
+          "focal length": "",
+          "resolution": {
+            "width": 2048,
+            "height": 864
+          },
+          "mm": {
+            "width": 10.24,
+            "height": 4.32,
+            "diagonal": 11.114
+          },
+          "inches": {
+            "width": 0.403,
+            "height": 0.17,
+            "diagonal": 0.437
+          }
+        },
+        "2K 16:9": {
+          "focal length": "",
+          "resolution": {
+            "width": 1920,
+            "height": 1080
+          },
+          "mm": {
+            "width": 9.6,
+            "height": 5.4,
+            "diagonal": 11.015
+          },
+          "inches": {
+            "width": 0.378,
+            "height": 0.213,
+            "diagonal": 0.434
+          }
         }
       }
     },
