@@ -302,6 +302,10 @@ Fujifilm,X-S20,6.2K 3:2 (Open Gate),,6240,4160,23.5,15.6,28.207,0.925,0.614,1.11
 Fujifilm,X-S20,4K DCI,,4090,2160,23.5,12.4,26.571,0.925,0.488,1.046,Non-native aspect ratios derived from crop factor values listed above.
 Fujifilm,X-S20,4K UHD,,4096,2160,23.5,13.2,26.953,0.925,0.52,1.061,Non-native aspect ratios derived from crop factor values listed above.
 Fujifilm,X-S20,4K DCI (1.18x Crop),,4096,2160,19.9,11.2,22.835,0.783,0.441,0.899,Non-native aspect ratios derived from crop factor values listed above.
+Fujifilm,X-T5,All,,,,23.5,15.6,28.207,0.925,0.614,1.11,Non-nativ4e sensor dimensions are approximated based on official crop factors.
+Fujifilm,X-T5,1.23x Crop,,,,19.1,10.7,21.893,0.752,0.421,0.862,Non-nativ4e sensor dimensions are approximated based on official crop factors.
+Fujifilm,X-T5,1.14x Crop,,,,20.6,11.6,23.641,0.811,0.457,0.931,Non-nativ4e sensor dimensions are approximated based on official crop factors.
+Fujifilm,X-T5,1.1x Crop,,,,21.4,12.0,24.535,0.843,0.472,0.966,Non-nativ4e sensor dimensions are approximated based on official crop factors.
 GoPro,HD HERO,All,,,,5.76,4.29,7.182,0.22,0.17,0.278,
 GoPro,HD HERO2,All,,,,5.76,4.29,7.182,0.22,0.17,0.278,
 GoPro,HERO,All,,,,4.57,3.43,5.714,0.179,0.135,0.224,
