@@ -5607,6 +5607,81 @@
           }
         }
       }
+    },
+    "X-T5": {
+      "info": {
+        "Other": "Non-nativ4e sensor dimensions are approximated based on official crop factors."
+      },
+      "sensor dimensions": {
+        "All": {
+          "focal length": "",
+          "resolution": {
+            "width": "",
+            "height": ""
+          },
+          "mm": {
+            "width": 23.5,
+            "height": 15.6,
+            "diagonal": 28.207
+          },
+          "inches": {
+            "width": 0.925,
+            "height": 0.614,
+            "diagonal": 1.11
+          }
+        },
+        "1.23x Crop": {
+          "focal length": "",
+          "resolution": {
+            "width": "",
+            "height": ""
+          },
+          "mm": {
+            "width": 19.1,
+            "height": 10.7,
+            "diagonal": 21.893
+          },
+          "inches": {
+            "width": 0.752,
+            "height": 0.421,
+            "diagonal": 0.862
+          }
+        },
+        "1.14x Crop": {
+          "focal length": "",
+          "resolution": {
+            "width": "",
+            "height": ""
+          },
+          "mm": {
+            "width": 20.6,
+            "height": 11.6,
+            "diagonal": 23.641
+          },
+          "inches": {
+            "width": 0.811,
+            "height": 0.457,
+            "diagonal": 0.931
+          }
+        },
+        "1.1x Crop": {
+          "focal length": "",
+          "resolution": {
+            "width": "",
+            "height": ""
+          },
+          "mm": {
+            "width": 21.4,
+            "height": 12.0,
+            "diagonal": 24.535
+          },
+          "inches": {
+            "width": 0.843,
+            "height": 0.472,
+            "diagonal": 0.966
+          }
+        }
+      }
     }
   },
   "GoPro": {
