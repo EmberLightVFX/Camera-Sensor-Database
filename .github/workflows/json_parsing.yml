@@ -16,12 +16,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: "pip"
@@ -30,17 +30,17 @@ jobs:
         id: csv
         run: |
           pip install -r ./scripts/requirements.txt
-          python3 scripts/generate_csv.py 2> csv_error.log || { cat csv_error.log; echo "::set-output name=error::$(cat csv_error.log)"; exit 1; }
+          python3 scripts/generate_csv.py 2> csv_error.log || { cat csv_error.log; { echo 'error<<EOF'; cat csv_error.log; echo 'EOF'; } >> $GITHUB_OUTPUT; exit 1; }
 
       - name: Generate YAML from JSON
         id: yaml
         run: |
-          python3 scripts/generate_yaml.py 2> yaml_error.log || { cat yaml_error.log; echo "::set-output name=error::$(cat yaml_error.log)"; exit 1; }
+          python3 scripts/generate_yaml.py 2> yaml_error.log || { cat yaml_error.log; { echo 'error<<EOF'; cat yaml_error.log; echo 'EOF'; } >> $GITHUB_OUTPUT; exit 1; }
 
       - name: Generate Markdown documentation
         id: markdown
         run: |
-          python3 scripts/generate_markdown.py 2> markdown_error.log || { cat markdown_error.log; echo "::set-output name=error::$(cat markdown_error.log)"; exit 1; }
+          python3 scripts/generate_markdown.py 2> markdown_error.log || { cat markdown_error.log; { echo 'error<<EOF'; cat markdown_error.log; echo 'EOF'; } >> $GITHUB_OUTPUT; exit 1; }
 
       - name: Check for changes
         id: check_changes
@@ -52,7 +52,7 @@ jobs:
           fi
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         if: steps.check_changes.outputs.has_changes == 'true'
         with:
           commit-message: ${{ inputs.commit_message || 'Manual JSON parsing update' }}
@@ -78,7 +78,7 @@ jobs:
 
       - name: Post workflow summary
         run: |
-          if ${{ steps.check_changes.outputs.has_changes == 'true' }}; then
+          if [ "${{ steps.check_changes.outputs.has_changes }}" == "true" ]; then
             echo "### ✅ JSON Parsing completed successfully" >> $GITHUB_STEP_SUMMARY
             echo "A pull request has been created with the generated files." >> $GITHUB_STEP_SUMMARY
           else
@@ -88,7 +88,7 @@ jobs:
 
       - name: Report errors if any step fails
         if: failure()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const stepOutputs = {
