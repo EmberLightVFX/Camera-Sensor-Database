@@ -95,6 +95,7 @@
 - [Fujifilm](/ ':disabled')
   - [GFX ETERNA 55](/fujifilm/gfxeterna55.md)
   - [X-H2s](/fujifilm/xh2s.md)
+  - [X-S20](/fujifilm/xs20.md)
 
 - [GoPro](/ ':disabled')
   - [HD HERO](/gopro/hdhero.md)
@@ -160,6 +161,7 @@
 
 - [Sony](/ ':disabled')
   - [A7 IV](/sony/a7iv.md)
+  - [BURANO](/sony/burano.md)
   - [F23](/sony/f23.md)
   - [F35](/sony/f35.md)
   - [F5](/sony/f5.md)
@@ -167,6 +169,7 @@
   - [F65](/sony/f65.md)
   - [FDR-X1000V](/sony/fdrx1000v.md)
   - [FX3](/sony/fx3.md)
+  - [FX6](/sony/fx6.md)
   - [HDC-4800](/sony/hdc4800.md)
   - [HDC-F950](/sony/hdcf950.md)
   - [HDC-P1](/sony/hdcp1.md)
