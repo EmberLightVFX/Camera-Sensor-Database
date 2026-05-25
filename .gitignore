@@ -1,5 +1,6 @@
 # Custom
 pr_body.txt
+issue_body.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

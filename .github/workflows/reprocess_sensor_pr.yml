@@ -114,7 +114,7 @@ jobs:
               const fs = require('fs');
               fs.writeFileSync('pr_body.txt', pr.data.body || '');
               
-              const result = execSync('pip install -r ./scripts/requirements.txt && python3 ./scripts/update_sensors_and_generate_json.py "$(cat pr_body.txt)" 2> python_error.log || { cat python_error.log; exit 1; }', { encoding: 'utf8' });
+              const result = execSync('pip install -r ./scripts/requirements.txt && python3 ./scripts/update_sensors_and_generate_json.py pr_body.txt 2> python_error.log || { cat python_error.log; exit 1; }', { encoding: 'utf8' });
               console.log(result);
             } catch (error) {
               console.error('Error running Python script:', error);

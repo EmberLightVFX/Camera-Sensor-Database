@@ -50,11 +50,18 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
+      - name: Write issue body to file
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require('fs');
+            fs.writeFileSync('issue_body.txt', context.payload.issue.body || '');
+
       - name: Process and update JSON with Python
         id: python
         run: |
           pip install -r ./scripts/requirements.txt
-          python3 ./scripts/update_sensors_and_generate_json.py "${{ github.event.issue.body }}" 2> python_error.log || { cat python_error.log; { echo 'error<<EOF'; cat python_error.log; echo 'EOF'; } >> $GITHUB_OUTPUT; exit 1; }
+          python3 ./scripts/update_sensors_and_generate_json.py issue_body.txt 2> python_error.log || { cat python_error.log; { echo 'error<<EOF'; cat python_error.log; echo 'EOF'; } >> $GITHUB_OUTPUT; exit 1; }
 
       - name: Generate csv
         id: csv

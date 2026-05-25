@@ -12,7 +12,12 @@ if DEBUG:
     BODY = """"""
 
 else:
-    BODY = sys.argv[1]
+    arg = sys.argv[1]
+    if os.path.isfile(arg):
+        with open(arg, "r") as f:
+            BODY = f.read()
+    else:
+        BODY = arg
 
 data_folder = os.path.join(".", "data")
 json_file_path = os.path.join(data_folder, "sensors.json")
