@@ -4214,6 +4214,63 @@ Fujifilm:
           width: 0.783
           height: 0.441
           diagonal: 0.899
+  X-T4:
+    info:
+      Other: Non-native values are approximations based on crop values provided by
+        users.
+    sensor dimensions:
+      All:
+        focal length: ''
+        resolution:
+          width: ''
+          height: ''
+        mm:
+          width: 23.5
+          height: 15.6
+          diagonal: 28.207
+        inches:
+          width: 0.925
+          height: 0.614
+          diagonal: 1.11
+      4K 48/50/60p:
+        focal length: ''
+        resolution:
+          width: ''
+          height: ''
+        mm:
+          width: 19.9
+          height: 11.2
+          diagonal: 22.835
+        inches:
+          width: 0.783
+          height: 0.441
+          diagonal: 0.899
+      240 fps:
+        focal length: ''
+        resolution:
+          width: ''
+          height: ''
+        mm:
+          width: 18.2
+          height: 10.2
+          diagonal: 20.863
+        inches:
+          width: 0.717
+          height: 0.402
+          diagonal: 0.822
+      4K IBIS:
+        focal length: ''
+        resolution:
+          width: ''
+          height: ''
+        mm:
+          width: 18.2
+          height: 10.2
+          diagonal: 20.863
+        inches:
+          width: 0.717
+          height: 0.402
+          diagonal: 0.822
 GoPro:
   HD HERO:
     info: {}
