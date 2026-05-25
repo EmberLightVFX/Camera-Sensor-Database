@@ -52,12 +52,15 @@ vendor = None
 camera = None
 
 blocks = BODY.strip().split("### Name", 1)
+print("blocks", blocks)
 
 ## Camera info
 camera_info = blocks[0].strip().split("### ")
+print("camera_info", camera_info)
 
 # Vendor
 category, data = cleanup_block(camera_info[2])
+print("Vendor category and data", category, data)
 if data == "Other":
     category, data = cleanup_block(camera_info[3])
 vendor = data
@@ -66,12 +69,14 @@ if vendor not in sensors_data:
 
 # Camera
 category, data = cleanup_block(camera_info[4])
+print("Camera category and data", category, data)
 camera = data
 if camera not in sensors_data[vendor]:
     sensors_data[vendor][camera] = {}
 
 # Additional Information
 category, data = cleanup_block(camera_info[5])
+print("Additional Information category and data", category, data)
 sensors_data[vendor][camera]["info"] = {}
 if data:
     sensors_data[vendor][camera]["info"]["Other"] = data
