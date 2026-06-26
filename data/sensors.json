@@ -14609,6 +14609,183 @@
         }
       }
     },
+    "Venice 2 - 8K": {
+      "info": {
+        "Other": "This camera has another format called:\n5.4K 16:9 S35\n5434 x 3056 (resolution)\n22.61 x 12.71 (mm sensor width and height)\n\nThe template \"only\" has 10 entries for formats, I didn't know how to add another one."
+      },
+      "sensor dimensions": {
+        "8.6K 3:2 FF": {
+          "focal length": "",
+          "resolution": {
+            "width": 8640,
+            "height": 5760
+          },
+          "mm": {
+            "width": 35.94,
+            "height": 23.96,
+            "diagonal": 43.195
+          },
+          "inches": {
+            "width": 1.415,
+            "height": 0.943,
+            "diagonal": 1.7
+          }
+        },
+        "8.6K 17:9 (FF)": {
+          "focal length": "",
+          "resolution": {
+            "width": 8640,
+            "height": 4556
+          },
+          "mm": {
+            "width": 35.94,
+            "height": 18.95,
+            "diagonal": 40.63
+          },
+          "inches": {
+            "width": 1.415,
+            "height": 0.746,
+            "diagonal": 1.6
+          }
+        },
+        "8.2K 17:9 (FF)": {
+          "focal length": "",
+          "resolution": {
+            "width": 8192,
+            "height": 4320
+          },
+          "mm": {
+            "width": 34.08,
+            "height": 17.97,
+            "diagonal": 38.527
+          },
+          "inches": {
+            "width": 1.342,
+            "height": 0.707,
+            "diagonal": 1.517
+          }
+        },
+        "8.2K 2.39:1 (FF)": {
+          "focal length": "",
+          "resolution": {
+            "width": 8192,
+            "height": 3432
+          },
+          "mm": {
+            "width": 34.08,
+            "height": 14.28,
+            "diagonal": 36.951
+          },
+          "inches": {
+            "width": 1.342,
+            "height": 0.562,
+            "diagonal": 1.455
+          }
+        },
+        "8.1K 16:9 (FF)": {
+          "focal length": "",
+          "resolution": {
+            "width": 8100,
+            "height": 4556
+          },
+          "mm": {
+            "width": 33.7,
+            "height": 18.95,
+            "diagonal": 38.663
+          },
+          "inches": {
+            "width": 1.327,
+            "height": 0.746,
+            "diagonal": 1.522
+          }
+        },
+        "7.6K 16:9 (FF)": {
+          "focal length": "",
+          "resolution": {
+            "width": 7680,
+            "height": 4320
+          },
+          "mm": {
+            "width": 31.95,
+            "height": 17.97,
+            "diagonal": 36.657
+          },
+          "inches": {
+            "width": 1.258,
+            "height": 0.707,
+            "diagonal": 1.443
+          }
+        },
+        "5.8K 6:5 (S35)": {
+          "focal length": "",
+          "resolution": {
+            "width": 5792,
+            "height": 4854
+          },
+          "mm": {
+            "width": 24.09,
+            "height": 20.19,
+            "diagonal": 31.432
+          },
+          "inches": {
+            "width": 0.948,
+            "height": 0.795,
+            "diagonal": 1.237
+          }
+        },
+        "5.8K 4:3 S35": {
+          "focal length": "",
+          "resolution": {
+            "width": 5792,
+            "height": 4276
+          },
+          "mm": {
+            "width": 24.09,
+            "height": 17.79,
+            "diagonal": 29.947
+          },
+          "inches": {
+            "width": 0.948,
+            "height": 0.7,
+            "diagonal": 1.178
+          }
+        },
+        "5.8K 17:9 S35": {
+          "focal length": "",
+          "resolution": {
+            "width": 5792,
+            "height": 3056
+          },
+          "mm": {
+            "width": 24.09,
+            "height": 12.71,
+            "diagonal": 27.237
+          },
+          "inches": {
+            "width": 0.948,
+            "height": 0.5,
+            "diagonal": 1.072
+          }
+        },
+        "5.5K 2.39:1 S35": {
+          "focal length": "",
+          "resolution": {
+            "width": 5480,
+            "height": 2296
+          },
+          "mm": {
+            "width": 22.8,
+            "height": 9.55,
+            "diagonal": 24.719
+          },
+          "inches": {
+            "width": 0.898,
+            "height": 0.376,
+            "diagonal": 0.974
+          }
+        }
+      }
+    },
     "Venice 2 8K": {
       "info": {},
       "sensor dimensions": {
