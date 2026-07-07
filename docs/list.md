@@ -195,6 +195,7 @@
   - [SRW-9000PL](/sony/srw9000pl.md)
   - [UMC-S3C](/sony/umcs3c.md)
   - [VENICE](/sony/venice.md)
+  - [Venice 2 - 6K](/sony/venice26k.md)
   - [Venice 2 - 8K](/sony/venice28k.md)
   - [Venice 2 8K](/sony/venice28k.md)
   - [ZV-E1](/sony/zve1.md)
