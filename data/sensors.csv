@@ -832,75 +832,17 @@ Sony,Venice 2 - 6K,4K 4:3 S35,,4096,3024,24.33,17.96,30.241,0.958,0.707,1.191,
 Sony,Venice 2 - 6K,4K 17:9 S35,,4096,2160,24.33,12.83,27.506,0.958,0.505,1.083,
 Sony,Venice 2 - 6K,4K 2.39:1 S35,,4096,1716,24.33,10.19,26.378,0.958,0.401,1.039,
 Sony,Venice 2 - 6K,3.8K 16:9 S35,,3840,2160,22.81,12.83,26.171,0.898,0.505,1.03,
-Sony,Venice 2 - 8K,8.6K 3:2 FF,,8640,5760,35.94,23.96,43.195,1.415,0.943,1.7,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,8.6K 17:9 (FF),,8640,4556,35.94,18.95,40.63,1.415,0.746,1.6,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,8.2K 17:9 (FF),,8192,4320,34.08,17.97,38.527,1.342,0.707,1.517,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,8.2K 2.39:1 (FF),,8192,3432,34.08,14.28,36.951,1.342,0.562,1.455,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,8.1K 16:9 (FF),,8100,4556,33.7,18.95,38.663,1.327,0.746,1.522,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,7.6K 16:9 (FF),,7680,4320,31.95,17.97,36.657,1.258,0.707,1.443,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,5.8K 6:5 (S35),,5792,4854,24.09,20.19,31.432,0.948,0.795,1.237,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,5.8K 4:3 S35,,5792,4276,24.09,17.79,29.947,0.948,0.7,1.178,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,5.8K 17:9 S35,,5792,3056,24.09,12.71,27.237,0.948,0.5,1.072,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 - 8K,5.5K 2.39:1 S35,,5480,2296,22.8,9.55,24.719,0.898,0.376,0.974,"This camera has another format called:
-5.4K 16:9 S35
-5434 x 3056 (resolution)
-22.61 x 12.71 (mm sensor width and height)
-
-The template ""only"" has 10 entries for formats, I didn't know how to add another one."
-Sony,Venice 2 8K,8.6K 3:2 Full Frame,,8640,5760,35.9,24.0,43.183,1.413,0.945,1.7,
-Sony,Venice 2 8K,8.6K 17:9 Full Frame,,8640,4556,35.9,19.0,40.618,1.413,0.748,1.599,
-Sony,Venice 2 8K,8.2K 2.39:1 Full Frame,,8192,3432,34.1,14.3,36.977,1.343,0.563,1.456,
-Sony,Venice 2 8K,8.2K 17:9 Full Frame,,8192,4320,34.1,18.0,38.559,1.343,0.709,1.519,
-Sony,Venice 2 8K,7.6K 16:9 Full Frame,,7680,4320,31.9,18.0,36.628,1.256,0.709,1.442,
-Sony,Venice 2 8K,8.1K 16:9 Full Frame,,8100,4556,33.7,19.0,38.687,1.327,0.748,1.523,
-Sony,Venice 2 8K,5.8K 4:3 Super 35,,5792,4276,24.1,17.8,29.961,0.949,0.701,1.18,
-Sony,Venice 2 8K,5.4K 16:9 Super 35,,5434,3056,22.6,12.7,25.924,0.89,0.5,1.021,
-Sony,Venice 2 8K,5.5K 2.39:1 Super 35,,5480,2296,22.8,9.6,24.739,0.898,0.378,0.974,
+Sony,Venice 2 - 8K,8.6K 3:2 FF,,8640,5760,35.94,23.96,43.195,1.415,0.943,1.7,
+Sony,Venice 2 - 8K,8.6K 17:9 (FF),,8640,4556,35.94,18.95,40.63,1.415,0.746,1.6,
+Sony,Venice 2 - 8K,8.2K 17:9 (FF),,8192,4320,34.08,17.97,38.527,1.342,0.707,1.517,
+Sony,Venice 2 - 8K,8.2K 2.39:1 (FF),,8192,3432,34.08,14.28,36.951,1.342,0.562,1.455,
+Sony,Venice 2 - 8K,8.1K 16:9 (FF),,8100,4556,33.7,18.95,38.663,1.327,0.746,1.522,
+Sony,Venice 2 - 8K,7.6K 16:9 (FF),,7680,4320,31.95,17.97,36.657,1.258,0.707,1.443,
+Sony,Venice 2 - 8K,5.8K 6:5 (S35),,5792,4854,24.09,20.19,31.432,0.948,0.795,1.237,
+Sony,Venice 2 - 8K,5.8K 4:3 S35,,5792,4276,24.09,17.79,29.947,0.948,0.7,1.178,
+Sony,Venice 2 - 8K,5.8K 17:9 S35,,5792,3056,24.09,12.71,27.237,0.948,0.5,1.072,
+Sony,Venice 2 - 8K,5.5K 2.39:1 S35,,5480,2296,22.8,9.55,24.719,0.898,0.376,0.974,
+Sony,Venice 2 - 8K,5.4K 16:9 S35,,5434,3056,22.61,12.71,25.94,0.89,0.5,1.021,
 Sony,ZV-E1,All,,4240,2832,35.6,23.8,42.823,1.402,0.937,1.686,
 Sony,a6500,All,,,,23.5,15.6,28.207,0.925,0.614,1.11,
 Sony,a7 II,All,,,,35.8,20.1,41.057,1.409,0.791,1.616,
