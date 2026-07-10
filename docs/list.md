@@ -197,7 +197,6 @@
   - [VENICE](/sony/venice.md)
   - [Venice 2 - 6K](/sony/venice26k.md)
   - [Venice 2 - 8K](/sony/venice28k.md)
-  - [Venice 2 8K](/sony/venice28k.md)
   - [ZV-E1](/sony/zve1.md)
   - [a6500](/sony/a6500.md)
   - [a7 II](/sony/a7ii.md)
